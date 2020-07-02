@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		608A484924ADE5260023E58A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A484824ADE5260023E58A /* AppDelegate.swift */; };
+		608A484B24ADE5260023E58A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A484A24ADE5260023E58A /* SceneDelegate.swift */; };
+		608A484D24ADE5260023E58A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A484C24ADE5260023E58A /* ViewController.swift */; };
+		608A485024ADE5260023E58A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608A484E24ADE5260023E58A /* Main.storyboard */; };
+		608A485224ADE52B0023E58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608A485124ADE52B0023E58A /* Assets.xcassets */; };
+		608A485524ADE52B0023E58A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608A485324ADE52B0023E58A /* LaunchScreen.storyboard */; };
+		608A486024ADE52C0023E58A /* SimpleMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A485F24ADE52C0023E58A /* SimpleMeetTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608A485C24ADE52B0023E58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608A483D24ADE5260023E58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608A484424ADE5260023E58A;
+			remoteInfo = SimpleMeet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		608A484524ADE5260023E58A /* SimpleMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		608A484824ADE5260023E58A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		608A484A24ADE5260023E58A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		608A484C24ADE5260023E58A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		608A484F24ADE5260023E58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608A485124ADE52B0023E58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		608A485424ADE52B0023E58A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		608A485624ADE52B0023E58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608A485B24ADE52B0023E58A /* SimpleMeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		608A485F24ADE52C0023E58A /* SimpleMeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMeetTests.swift; sourceTree = "<group>"; };
+		608A486124ADE52C0023E58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608A484224ADE5260023E58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608A485824ADE52B0023E58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608A483C24ADE5260023E58A = {
+			isa = PBXGroup;
+			children = (
+				608A484724ADE5260023E58A /* SimpleMeet */,
+				608A485E24ADE52C0023E58A /* SimpleMeetTests */,
+				608A484624ADE5260023E58A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		608A484624ADE5260023E58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608A484524ADE5260023E58A /* SimpleMeet.app */,
+				608A485B24ADE52B0023E58A /* SimpleMeetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		608A484724ADE5260023E58A /* SimpleMeet */ = {
+			isa = PBXGroup;
+			children = (
+				608A484824ADE5260023E58A /* AppDelegate.swift */,
+				608A484A24ADE5260023E58A /* SceneDelegate.swift */,
+				608A484C24ADE5260023E58A /* ViewController.swift */,
+				608A484E24ADE5260023E58A /* Main.storyboard */,
+				608A485124ADE52B0023E58A /* Assets.xcassets */,
+				608A485324ADE52B0023E58A /* LaunchScreen.storyboard */,
+				608A485624ADE52B0023E58A /* Info.plist */,
+			);
+			path = SimpleMeet;
+			sourceTree = "<group>";
+		};
+		608A485E24ADE52C0023E58A /* SimpleMeetTests */ = {
+			isa = PBXGroup;
+			children = (
+				608A485F24ADE52C0023E58A /* SimpleMeetTests.swift */,
+				608A486124ADE52C0023E58A /* Info.plist */,
+			);
+			path = SimpleMeetTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		608A484424ADE5260023E58A /* SimpleMeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608A486424ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeet" */;
+			buildPhases = (
+				608A484124ADE5260023E58A /* Sources */,
+				608A484224ADE5260023E58A /* Frameworks */,
+				608A484324ADE5260023E58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleMeet;
+			productName = SimpleMeet;
+			productReference = 608A484524ADE5260023E58A /* SimpleMeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		608A485A24ADE52B0023E58A /* SimpleMeetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608A486724ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeetTests" */;
+			buildPhases = (
+				608A485724ADE52B0023E58A /* Sources */,
+				608A485824ADE52B0023E58A /* Frameworks */,
+				608A485924ADE52B0023E58A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608A485D24ADE52B0023E58A /* PBXTargetDependency */,
+			);
+			name = SimpleMeetTests;
+			productName = SimpleMeetTests;
+			productReference = 608A485B24ADE52B0023E58A /* SimpleMeetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608A483D24ADE5260023E58A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Дмитрий Федоринов";
+				TargetAttributes = {
+					608A484424ADE5260023E58A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					608A485A24ADE52B0023E58A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 608A484424ADE5260023E58A;
+					};
+				};
+			};
+			buildConfigurationList = 608A484024ADE5260023E58A /* Build configuration list for PBXProject "SimpleMeet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608A483C24ADE5260023E58A;
+			productRefGroup = 608A484624ADE5260023E58A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608A484424ADE5260023E58A /* SimpleMeet */,
+				608A485A24ADE52B0023E58A /* SimpleMeetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		608A484324ADE5260023E58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608A485524ADE52B0023E58A /* LaunchScreen.storyboard in Resources */,
+				608A485224ADE52B0023E58A /* Assets.xcassets in Resources */,
+				608A485024ADE5260023E58A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608A485924ADE52B0023E58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608A484124ADE5260023E58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608A484D24ADE5260023E58A /* ViewController.swift in Sources */,
+				608A484924ADE5260023E58A /* AppDelegate.swift in Sources */,
+				608A484B24ADE5260023E58A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608A485724ADE52B0023E58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608A486024ADE52C0023E58A /* SimpleMeetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608A485D24ADE52B0023E58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608A484424ADE5260023E58A /* SimpleMeet */;
+			targetProxy = 608A485C24ADE52B0023E58A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		608A484E24ADE5260023E58A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608A484F24ADE5260023E58A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		608A485324ADE52B0023E58A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608A485424ADE52B0023E58A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608A486224ADE52C0023E58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		608A486324ADE52C0023E58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		608A486524ADE52C0023E58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FJHRWT7C3;
+				INFOPLIST_FILE = SimpleMeet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		608A486624ADE52C0023E58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FJHRWT7C3;
+				INFOPLIST_FILE = SimpleMeet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		608A486824ADE52C0023E58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FJHRWT7C3;
+				INFOPLIST_FILE = SimpleMeetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMeet.app/SimpleMeet";
+			};
+			name = Debug;
+		};
+		608A486924ADE52C0023E58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FJHRWT7C3;
+				INFOPLIST_FILE = SimpleMeetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMeet.app/SimpleMeet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608A484024ADE5260023E58A /* Build configuration list for PBXProject "SimpleMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608A486224ADE52C0023E58A /* Debug */,
+				608A486324ADE52C0023E58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608A486424ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608A486524ADE52C0023E58A /* Debug */,
+				608A486624ADE52C0023E58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608A486724ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608A486824ADE52C0023E58A /* Debug */,
+				608A486924ADE52C0023E58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608A483D24ADE5260023E58A /* Project object */;
+}
