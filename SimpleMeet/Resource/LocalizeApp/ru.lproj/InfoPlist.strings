@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SimpleMeet
+
+  Created by Дмитрий Федоринов on 02.07.2020.
+  Copyright © 2020 Дмитрий Федоринов. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Simple Meet";
+"NSHumanReadableCopyright" = "2020 Дмитрий Федоринов. Все права защищены.";
