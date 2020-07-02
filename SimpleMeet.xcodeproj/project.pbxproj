@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		608A486E24ADEA980023E58A /* UIColor+Dark+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */; };
 		608A487224ADEF470023E58A /* UIColor+Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A487024ADEF470023E58A /* UIColor+Pallete.swift */; };
 		608A487324ADEF470023E58A /* UIImage+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A487124ADEF470023E58A /* UIImage+app.swift */; };
+		6DDA1D8E6A2119D814AE6660 /* Pods_SimpleMeetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2DD27A076948C458EDA926 /* Pods_SimpleMeetTests.framework */; };
+		ACB74C560DFA5E383FB17893 /* Pods_SimpleMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD4FE0B3B36972CFFCF7AE /* Pods_SimpleMeet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40E45C3B4BC7E72B6BB43AF0 /* Pods-SimpleMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeet.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		6047F92724AE0397009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6047F92B24AE041B009F013C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6047F92D24AE041F009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dark+Hex.swift"; sourceTree = "<group>"; };
 		608A487024ADEF470023E58A /* UIColor+Pallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Pallete.swift"; sourceTree = "<group>"; };
 		608A487124ADEF470023E58A /* UIImage+app.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+app.swift"; sourceTree = "<group>"; };
+		83AD4FE0B3B36972CFFCF7AE /* Pods_SimpleMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D3BD8A3F4F7044A8D363F6 /* Pods-SimpleMeetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeetTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleMeetTests/Pods-SimpleMeetTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0B4902EB8D8DCEE77B54576 /* Pods-SimpleMeetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeetTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMeetTests/Pods-SimpleMeetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAEDBAC38B71437FF7C36D10 /* Pods-SimpleMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeet.release.xcconfig"; path = "Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet.release.xcconfig"; sourceTree = "<group>"; };
+		CF2DD27A076948C458EDA926 /* Pods_SimpleMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB74C560DFA5E383FB17893 /* Pods_SimpleMeet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +74,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DDA1D8E6A2119D814AE6660 /* Pods_SimpleMeetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA2616E6690D2655CA31765 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E45C3B4BC7E72B6BB43AF0 /* Pods-SimpleMeet.debug.xcconfig */,
+				CAEDBAC38B71437FF7C36D10 /* Pods-SimpleMeet.release.xcconfig */,
+				C0B4902EB8D8DCEE77B54576 /* Pods-SimpleMeetTests.debug.xcconfig */,
+				A8D3BD8A3F4F7044A8D363F6 /* Pods-SimpleMeetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DD91F9ECF6C57CB2817437C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AD4FE0B3B36972CFFCF7AE /* Pods_SimpleMeet.framework */,
+				CF2DD27A076948C458EDA926 /* Pods_SimpleMeetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6047F92E24AE065B009F013C /* LocalizeApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +124,8 @@
 				608A484724ADE5260023E58A /* SimpleMeet */,
 				608A485E24ADE52C0023E58A /* SimpleMeetTests */,
 				608A484624ADE5260023E58A /* Products */,
+				4FA2616E6690D2655CA31765 /* Pods */,
+				5DD91F9ECF6C57CB2817437C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 608A486424ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeet" */;
 			buildPhases = (
+				97ACC85AC9188C3E3E660780 /* [CP] Check Pods Manifest.lock */,
 				608A484124ADE5260023E58A /* Sources */,
 				608A484224ADE5260023E58A /* Frameworks */,
 				608A484324ADE5260023E58A /* Resources */,
+				86494B92DFDCAAC7D5CCAD66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 608A486724ADE52C0023E58A /* Build configuration list for PBXNativeTarget "SimpleMeetTests" */;
 			buildPhases = (
+				B5C7EB35BE2BB48947A273DA /* [CP] Check Pods Manifest.lock */,
 				608A485724ADE52B0023E58A /* Sources */,
 				608A485824ADE52B0023E58A /* Frameworks */,
 				608A485924ADE52B0023E58A /* Resources */,
@@ -262,6 +297,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86494B92DFDCAAC7D5CCAD66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97ACC85AC9188C3E3E660780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMeet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C7EB35BE2BB48947A273DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMeetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		608A484124ADE5260023E58A /* Sources */ = {
@@ -445,11 +544,13 @@
 		};
 		608A486524ADE52C0023E58A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E45C3B4BC7E72B6BB43AF0 /* Pods-SimpleMeet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FJHRWT7C3;
 				INFOPLIST_FILE = SimpleMeet/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,11 +564,13 @@
 		};
 		608A486624ADE52C0023E58A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEDBAC38B71437FF7C36D10 /* Pods-SimpleMeet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FJHRWT7C3;
 				INFOPLIST_FILE = SimpleMeet/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +584,7 @@
 		};
 		608A486824ADE52C0023E58A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B4902EB8D8DCEE77B54576 /* Pods-SimpleMeetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +607,7 @@
 		};
 		608A486924ADE52C0023E58A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D3BD8A3F4F7044A8D363F6 /* Pods-SimpleMeetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
