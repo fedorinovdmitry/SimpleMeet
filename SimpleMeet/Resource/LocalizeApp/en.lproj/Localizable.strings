@@ -7,3 +7,9 @@
 */
 
 "Welcome" = "Welcome";
+"Welcome %d" = "Welcome %d";
+"Email" = "Email";
+"Login" = "Login";
+"Get started with:" = "Get started with:";
+"or sign up with:" = "or sign up with";
+"Already onboard?" = "Already onboard?";

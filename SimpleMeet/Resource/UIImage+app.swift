@@ -12,7 +12,11 @@ extension UIImage {
     
     /// AppImageCreator. If you want to sup darkMode -> you must dowload dark image version in assets and add "Dark" in image's name
     enum AppImage: String, CaseIterable {
-       case icon
+        case logo
+        
+        case facebook
+        case google
+        case apple
     }
     
     static func app(_ appImage: AppImage, rendering: RenderingMode = .automatic) -> UIImage? {
