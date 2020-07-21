@@ -14,6 +14,8 @@ extension UIImage {
     enum AppImage: String, CaseIterable {
         case logo
         
+        case registration
+        
         case facebook
         case google
         case apple

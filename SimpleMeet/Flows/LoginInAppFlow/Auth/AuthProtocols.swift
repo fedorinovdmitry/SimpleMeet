@@ -21,6 +21,7 @@ protocol AuthViewProtocol: class {
 protocol AuthPresenterProtocol: class {
     
     func configureView()
+    func tapLogin()
 }
 
 protocol AuthInteractorProtocol: class {
@@ -28,5 +29,5 @@ protocol AuthInteractorProtocol: class {
 }
 
 protocol AuthRouterProtocol: class {
-    
+    func goToSignIn()
 }

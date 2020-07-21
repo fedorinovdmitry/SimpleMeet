@@ -22,6 +22,26 @@
 		6006218424C5D27D005DBC90 /* MaterialLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006218324C5D27D005DBC90 /* MaterialLoadingIndicator.swift */; };
 		6006218624C5E594005DBC90 /* UIFont+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006218524C5E594005DBC90 /* UIFont+app.swift */; };
 		6006218824C5EFDD005DBC90 /* AuthViewsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006218724C5EFDD005DBC90 /* AuthViewsFactory.swift */; };
+		6013050F24C6F183005841C2 /* UILabel+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013050E24C6F183005841C2 /* UILabel+Gradient.swift */; };
+		6013051124C6F9FC005841C2 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013051024C6F9FC005841C2 /* GradientLabel.swift */; };
+		6013051324C7014D005841C2 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013051224C7014D005841C2 /* MaterialTextField.swift */; };
+		6037B0FB24C6C1A500F38F17 /* UIStackView+addArrSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B0FA24C6C1A500F38F17 /* UIStackView+addArrSub.swift */; };
+		6037B10324C6C74D00F38F17 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B0FD24C6C74D00F38F17 /* SignUpPresenter.swift */; };
+		6037B10424C6C74D00F38F17 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B0FE24C6C74D00F38F17 /* SignUpRouter.swift */; };
+		6037B10524C6C74D00F38F17 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B0FF24C6C74D00F38F17 /* SignUpViewController.swift */; };
+		6037B10624C6C74D00F38F17 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10024C6C74D00F38F17 /* SignUpProtocols.swift */; };
+		6037B10724C6C74D00F38F17 /* SignUpAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10124C6C74D00F38F17 /* SignUpAssembly.swift */; };
+		6037B10824C6C74D00F38F17 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10224C6C74D00F38F17 /* SignUpInteractor.swift */; };
+		6037B11024C6CCE000F38F17 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10A24C6CCE000F38F17 /* SignInPresenter.swift */; };
+		6037B11124C6CCE000F38F17 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10B24C6CCE000F38F17 /* SignInRouter.swift */; };
+		6037B11224C6CCE000F38F17 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10C24C6CCE000F38F17 /* SignInViewController.swift */; };
+		6037B11324C6CCE000F38F17 /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10D24C6CCE000F38F17 /* SignInProtocols.swift */; };
+		6037B11424C6CCE000F38F17 /* SignInAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10E24C6CCE000F38F17 /* SignInAssembly.swift */; };
+		6037B11524C6CCE000F38F17 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6037B10F24C6CCE000F38F17 /* SignInInteractor.swift */; };
+		6037B11B24C6D1C700F38F17 /* Phosphate Pro Cond Inline Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11724C6D1B900F38F17 /* Phosphate Pro Cond Inline Regular.otf */; };
+		6037B11C24C6D1CB00F38F17 /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11A24C6D1BA00F38F17 /* Phosphate Pro Cond Solid Regular.otf */; };
+		6037B11D24C6D1CF00F38F17 /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11924C6D1B900F38F17 /* PhosphatePro-Inline.otf */; };
+		6037B11E24C6D1D200F38F17 /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11824C6D1B900F38F17 /* PhosphatePro-Solid.otf */; };
 		6047F92A24AE041B009F013C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6047F92C24AE041B009F013C /* Localizable.strings */; };
 		6047F93124AE083D009F013C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6047F93324AE083D009F013C /* InfoPlist.strings */; };
 		6047F93724AE11CB009F013C /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047F93624AE11CB009F013C /* String+Localize.swift */; };
@@ -69,6 +89,26 @@
 		6006218324C5D27D005DBC90 /* MaterialLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialLoadingIndicator.swift; sourceTree = "<group>"; };
 		6006218524C5E594005DBC90 /* UIFont+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+app.swift"; sourceTree = "<group>"; };
 		6006218724C5EFDD005DBC90 /* AuthViewsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewsFactory.swift; sourceTree = "<group>"; };
+		6013050E24C6F183005841C2 /* UILabel+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Gradient.swift"; sourceTree = "<group>"; };
+		6013051024C6F9FC005841C2 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
+		6013051224C7014D005841C2 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		6037B0FA24C6C1A500F38F17 /* UIStackView+addArrSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+addArrSub.swift"; sourceTree = "<group>"; };
+		6037B0FD24C6C74D00F38F17 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		6037B0FE24C6C74D00F38F17 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		6037B0FF24C6C74D00F38F17 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6037B10024C6C74D00F38F17 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
+		6037B10124C6C74D00F38F17 /* SignUpAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAssembly.swift; sourceTree = "<group>"; };
+		6037B10224C6C74D00F38F17 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		6037B10A24C6CCE000F38F17 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		6037B10B24C6CCE000F38F17 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		6037B10C24C6CCE000F38F17 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		6037B10D24C6CCE000F38F17 /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		6037B10E24C6CCE000F38F17 /* SignInAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAssembly.swift; sourceTree = "<group>"; };
+		6037B10F24C6CCE000F38F17 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		6037B11724C6D1B900F38F17 /* Phosphate Pro Cond Inline Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Inline Regular.otf"; sourceTree = "<group>"; };
+		6037B11824C6D1B900F38F17 /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
+		6037B11924C6D1B900F38F17 /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
+		6037B11A24C6D1BA00F38F17 /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
 		6047F92B24AE041B009F013C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6047F92D24AE041F009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6047F93224AE083D009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -136,18 +176,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6006215824BDAAD9005DBC90 /* Modules */ = {
+		6006215824BDAAD9005DBC90 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				6006215924BDAAE8005DBC90 /* Auth */,
+				6037B11F24C6D7F800F38F17 /* LoginInAppFlow */,
 			);
-			path = Modules;
+			path = Flows;
 			sourceTree = "<group>";
 		};
 		6006215924BDAAE8005DBC90 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6006218724C5EFDD005DBC90 /* AuthViewsFactory.swift */,
 				6006216424BDAC68005DBC90 /* AuthPresenter.swift */,
 				6006216524BDAC68005DBC90 /* AuthRouter.swift */,
 				6006216624BDAC68005DBC90 /* AuthViewController.swift */,
@@ -184,8 +223,57 @@
 				6006217724C5869B005DBC90 /* MaterialVerticalButton.swift */,
 				6006218324C5D27D005DBC90 /* MaterialLoadingIndicator.swift */,
 				6006217924C588E2005DBC90 /* MaterialDesignExtensions.swift */,
+				6013051224C7014D005841C2 /* MaterialTextField.swift */,
 			);
 			path = MaterialDesignElements;
+			sourceTree = "<group>";
+		};
+		6037B0FC24C6C72100F38F17 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6037B0FD24C6C74D00F38F17 /* SignUpPresenter.swift */,
+				6037B0FE24C6C74D00F38F17 /* SignUpRouter.swift */,
+				6037B0FF24C6C74D00F38F17 /* SignUpViewController.swift */,
+				6037B10024C6C74D00F38F17 /* SignUpProtocols.swift */,
+				6037B10124C6C74D00F38F17 /* SignUpAssembly.swift */,
+				6037B10224C6C74D00F38F17 /* SignUpInteractor.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		6037B10924C6CCBA00F38F17 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				6037B10A24C6CCE000F38F17 /* SignInPresenter.swift */,
+				6037B10B24C6CCE000F38F17 /* SignInRouter.swift */,
+				6037B10C24C6CCE000F38F17 /* SignInViewController.swift */,
+				6037B10D24C6CCE000F38F17 /* SignInProtocols.swift */,
+				6037B10E24C6CCE000F38F17 /* SignInAssembly.swift */,
+				6037B10F24C6CCE000F38F17 /* SignInInteractor.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		6037B11624C6D1A100F38F17 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6037B11724C6D1B900F38F17 /* Phosphate Pro Cond Inline Regular.otf */,
+				6037B11A24C6D1BA00F38F17 /* Phosphate Pro Cond Solid Regular.otf */,
+				6037B11924C6D1B900F38F17 /* PhosphatePro-Inline.otf */,
+				6037B11824C6D1B900F38F17 /* PhosphatePro-Solid.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6037B11F24C6D7F800F38F17 /* LoginInAppFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6006215924BDAAE8005DBC90 /* Auth */,
+				6037B0FC24C6C72100F38F17 /* SignUp */,
+				6037B10924C6CCBA00F38F17 /* SignIn */,
+				6006218724C5EFDD005DBC90 /* AuthViewsFactory.swift */,
+			);
+			path = LoginInAppFlow;
 			sourceTree = "<group>";
 		};
 		6047F92E24AE065B009F013C /* LocalizeApp */ = {
@@ -229,7 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				608A486F24ADED730023E58A /* App */,
-				6006215824BDAAD9005DBC90 /* Modules */,
+				6006215824BDAAD9005DBC90 /* Flows */,
 				608A486B24ADEA5D0023E58A /* Helpers */,
 				608A486A24ADE8890023E58A /* Resource */,
 			);
@@ -248,11 +336,12 @@
 		608A486A24ADE8890023E58A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6037B11624C6D1A100F38F17 /* Fonts */,
 				6047F92E24AE065B009F013C /* LocalizeApp */,
-				608A487124ADEF470023E58A /* UIImage+app.swift */,
 				608A485124ADE52B0023E58A /* Assets.xcassets */,
 				608A485324ADE52B0023E58A /* LaunchScreen.storyboard */,
 				608A485624ADE52B0023E58A /* Info.plist */,
+				608A487124ADEF470023E58A /* UIImage+app.swift */,
 				608A487024ADEF470023E58A /* UIColor+Pallete.swift */,
 				6006218524C5E594005DBC90 /* UIFont+app.swift */,
 			);
@@ -264,6 +353,7 @@
 			children = (
 				6047F93524AE11B5009F013C /* String */,
 				608A486C24ADEA690023E58A /* UIKitExtensions */,
+				6013051024C6F9FC005841C2 /* GradientLabel.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -275,6 +365,8 @@
 				60A827CA24C6079400531E78 /* UIView+heights.swift */,
 				60A827C624C6078B00531E78 /* UIView + addSub.swift */,
 				608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */,
+				6037B0FA24C6C1A500F38F17 /* UIStackView+addArrSub.swift */,
+				6013050E24C6F183005841C2 /* UILabel+Gradient.swift */,
 			);
 			path = UIKitExtensions;
 			sourceTree = "<group>";
@@ -376,9 +468,13 @@
 			files = (
 				608A485524ADE52B0023E58A /* LaunchScreen.storyboard in Resources */,
 				6047F93124AE083D009F013C /* InfoPlist.strings in Resources */,
+				6037B11B24C6D1C700F38F17 /* Phosphate Pro Cond Inline Regular.otf in Resources */,
+				6037B11C24C6D1CB00F38F17 /* Phosphate Pro Cond Solid Regular.otf in Resources */,
 				6047F92A24AE041B009F013C /* Localizable.strings in Resources */,
 				608A485224ADE52B0023E58A /* Assets.xcassets in Resources */,
 				6006217524BDB8AF005DBC90 /* SocialImages.xcassets in Resources */,
+				6037B11D24C6D1CF00F38F17 /* PhosphatePro-Inline.otf in Resources */,
+				6037B11E24C6D1D200F38F17 /* PhosphatePro-Solid.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,22 +562,38 @@
 				6006216C24BDAC68005DBC90 /* AuthViewController.swift in Sources */,
 				6006216E24BDAC68005DBC90 /* AuthAssembly.swift in Sources */,
 				6006216F24BDAC68005DBC90 /* AuthInteractor.swift in Sources */,
+				6037B10524C6C74D00F38F17 /* SignUpViewController.swift in Sources */,
+				6037B10624C6C74D00F38F17 /* SignUpProtocols.swift in Sources */,
+				6037B11524C6CCE000F38F17 /* SignInInteractor.swift in Sources */,
+				6037B11024C6CCE000F38F17 /* SignInPresenter.swift in Sources */,
 				6006217C24C589B0005DBC90 /* RippleLayer.swift in Sources */,
 				608A486E24ADEA980023E58A /* UIColor+Dark+Hex.swift in Sources */,
+				6037B11224C6CCE000F38F17 /* SignInViewController.swift in Sources */,
+				6037B10424C6C74D00F38F17 /* SignUpRouter.swift in Sources */,
+				6037B10324C6C74D00F38F17 /* SignUpPresenter.swift in Sources */,
+				6037B10724C6C74D00F38F17 /* SignUpAssembly.swift in Sources */,
+				6037B0FB24C6C1A500F38F17 /* UIStackView+addArrSub.swift in Sources */,
 				6006217824C5869B005DBC90 /* MaterialVerticalButton.swift in Sources */,
+				6037B11324C6CCE000F38F17 /* SignInProtocols.swift in Sources */,
 				6006218224C5D077005DBC90 /* MaterialButton.swift in Sources */,
 				6047F93724AE11CB009F013C /* String+Localize.swift in Sources */,
 				6006217324BDB53A005DBC90 /* AuthSocialButton.swift in Sources */,
+				6013051124C6F9FC005841C2 /* GradientLabel.swift in Sources */,
 				608A484924ADE5260023E58A /* AppDelegate.swift in Sources */,
 				60A827C924C6079000531E78 /* UIDevice+.swift in Sources */,
 				608A484B24ADE5260023E58A /* SceneDelegate.swift in Sources */,
+				6037B11124C6CCE000F38F17 /* SignInRouter.swift in Sources */,
 				6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */,
 				6006217A24C588E2005DBC90 /* MaterialDesignExtensions.swift in Sources */,
 				6006218824C5EFDD005DBC90 /* AuthViewsFactory.swift in Sources */,
+				6037B11424C6CCE000F38F17 /* SignInAssembly.swift in Sources */,
 				6006218624C5E594005DBC90 /* UIFont+app.swift in Sources */,
 				60A827CB24C6079400531E78 /* UIView+heights.swift in Sources */,
 				608A487324ADEF470023E58A /* UIImage+app.swift in Sources */,
 				6006216D24BDAC68005DBC90 /* AuthProtocols.swift in Sources */,
+				6037B10824C6C74D00F38F17 /* SignUpInteractor.swift in Sources */,
+				6013051324C7014D005841C2 /* MaterialTextField.swift in Sources */,
+				6013050F24C6F183005841C2 /* UILabel+Gradient.swift in Sources */,
 				6006218424C5D27D005DBC90 /* MaterialLoadingIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

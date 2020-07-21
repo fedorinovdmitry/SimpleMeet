@@ -13,13 +13,21 @@ import SnapKit
 
 final class AuthViewController: UIViewController {
 
-    // MARK: - Custom types
-
     // MARK: - Public Properties
     
     var presenter: AuthPresenterProtocol!
     let configurator: AuthAssemblyProtocol = AuthAssembly()
     let viewsFactory: AuthViewsFactoryProtocol = AuthViewsFactory()
+    
+    // MARK: - LifeStyle ViewController
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configurator.configure(with: self)
+        createAndSetupViews()
+        presenter.configureView()
+        
+    }
     
     // MARK: - Setup Views
     
@@ -56,16 +64,17 @@ final class AuthViewController: UIViewController {
         alreadyOnBoard = viewsFactory.buildAuthStandartLabel(text: "Already onboard?".localized())
         loginAuthButton = viewsFactory.buildAuthStandartButton(text: "Login".localized())
         
-        addConstraints()
+        setupConstraints()
     }
     
     
     // MARK: Constraints
 
-    func addConstraints() {
-        socialButtonsStackView.addArrangedSubview(facebookAuthButton)
-        socialButtonsStackView.addArrangedSubview(googleAuthButton)
-        socialButtonsStackView.addArrangedSubview(appleAuthButton)
+    func setupConstraints() {
+        
+        socialButtonsStackView.addArrangedSubviews(views: [facebookAuthButton,
+                                                           googleAuthButton,
+                                                           appleAuthButton])
         
         view.addSubviews(views: [logoImageView,
                                  getStartedWithLabel,
@@ -132,19 +141,6 @@ final class AuthViewController: UIViewController {
     }
     
     
-    
-    // MARK: - LifeStyle ViewController
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configurator.configure(with: self)
-        createAndSetupViews()
-        presenter.configureView()
-        
-    }
-    
-    // MARK: - IBAction
-    
     // MARK: - Public methods
     
     // MARK: - Private methods
@@ -159,6 +155,9 @@ extension AuthViewController: AuthViewProtocol {
     
 }
 
+
+
+// MARK: - SwiftUI
 
 import SwiftUI
 

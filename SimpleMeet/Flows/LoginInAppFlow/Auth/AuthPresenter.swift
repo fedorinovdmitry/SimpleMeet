@@ -39,4 +39,8 @@ extension AuthPresenter: AuthPresenterProtocol {
         
     }
     
+    func tapLogin() {
+        router.goToSignIn()
+    }
+    
 }

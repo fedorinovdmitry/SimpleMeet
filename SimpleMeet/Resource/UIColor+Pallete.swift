@@ -14,14 +14,19 @@ extension UIColor {
 
         static let white = UIColor.color(light: .white, dark: .black)
         static let black = UIColor.color(light: .black, dark: .white)
+        static func blackWith(alpha: CGFloat = 0.5) -> UIColor {
+            return UIColor.color(light: hex("000000", alpha: alpha), dark: hex("FFFFFF", alpha: alpha))
+        }
+        static let blackGreen = UIColor.color(light: darkGreen, dark: .white)
 
+        
+        
+        
         static let lightGreen = hex("00EB00")
-        
-        
-//        static let background = UIColor.color(light: .white, dark: hex("1b1b1d"))
-//        static let secondaryBackground = UIColor(named: "secondaryBackground") ?? .black
-//
-//        static let gray = UIColor.color(light: .lightGray, dark: hex("8e8e92"))
+        static let darkGreen = hex("2E482E")
+        static func darkGreenWith(alpha: CGFloat = 0.5) -> UIColor {
+            return hex("2E482E", alpha: alpha)
+        }
 
     }
 }

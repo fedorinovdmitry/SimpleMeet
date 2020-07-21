@@ -28,4 +28,8 @@ final class AuthRouter {
 
 extension AuthRouter: AuthRouterProtocol {
     
+    func goToSignIn() {
+        let vc = SignInViewController()
+        viewController.present(vc, animated: true, completion: nil)
+    }
 }

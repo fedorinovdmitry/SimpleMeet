@@ -11,5 +11,13 @@
 "Email" = "Почта";
 "Login" = "Войти";
 "Get started with:" = "Войдите с помощью:";
-"or sign up with:" = "или зарегестрируйтесь с";
-"Already onboard?" = "уже зарегестрированы?";
+"or sign up with:" = "или зарегистрируйтесь с";
+"Already onboard?" = "уже зарегистрированы?";
+
+"registration" = "registrationRu";
+
+"Name" = "Имя";
+
+"Password" = "Пароль";
+"Confirm Password" = "Повторить пароль";
+"Sign up" = "Зарегистрироваться";
