@@ -15,6 +15,7 @@ extension UIImage {
         case logo
         
         case registration
+        case authorization
         
         case facebook
         case google

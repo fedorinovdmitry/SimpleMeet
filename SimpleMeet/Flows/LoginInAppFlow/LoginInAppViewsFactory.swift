@@ -1,5 +1,5 @@
 //
-//  AuthViewsFactory.swift
+//  LoginInAppViewsFactory.swift
 //  SimpleMeet
 //
 //  Created by Дмитрий Федоринов on 20.07.2020.
@@ -8,20 +8,30 @@
 
 import UIKit
 
-protocol AuthViewsFactoryProtocol {
-    func buildAuthStandartButton(text: String) -> MaterialButton
-    func buildSocialButton(type: AuthSocialButton.SocialType) -> AuthSocialButton
+protocol LoginInAppViewsFactoryProtocol {
+    
+    // ImageViews
     func buildLogoImageView() -> UIImageView
-    func buildAuthStandartLabel(text: String) -> UILabel
-//    func buildTitleLabel(text: String) -> GradientLabel
-    func buildRegistrationTitleImageView() -> UIImageView
-    func buildAuthTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField
+    func buildTitleImageViewWith(image: UIImage.AppImage) -> UIImageView
+    
+    // Labels
+    func buildLoginInAppStandartLabel(text: String) -> UILabel
+    
+    // Buttons
+    func buildLoginInAppStandartButton(text: String) -> MaterialButton
+    func buildSocialButton(type: AuthSocialButton.SocialType, frame: CGRect) -> AuthSocialButton
+    
+    // StackViews
+    func buildSocialButtonsStackView() -> UIStackView
+    
+    // TextFields
+    func buildLoginInAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField
+    
 }
-class AuthViewsFactory: AuthViewsFactoryProtocol {
+class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
     
-    private let socialButtonsSize = CGSize(width: 70, height: 70)
-    private lazy var simpleButtonHeight = CGFloat(socialButtonsSize.height / 2)
-    
+    // MARK: - ImageViews
+
     func buildLogoImageView() -> UIImageView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -29,14 +39,17 @@ class AuthViewsFactory: AuthViewsFactoryProtocol {
         return imageView
     }
     
-    func buildRegistrationTitleImageView() -> UIImageView {
+    func buildTitleImageViewWith(image: UIImage.AppImage) -> UIImageView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: UIImage.AppImage.registration.rawValue.localized())
+        imageView.image = UIImage(named: image.rawValue.localized())
         return imageView
     }
     
-    func buildAuthStandartLabel(text: String) -> UILabel {
+    
+    // MARK: - Labels
+
+    func buildLoginInAppStandartLabel(text: String) -> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = UIColor.Pallete.black
@@ -45,20 +58,9 @@ class AuthViewsFactory: AuthViewsFactoryProtocol {
         return label
     }
     
-//    func buildTitleLabel(text: String) -> GradientLabel {
-//        let label = GradientLabel()
-//
-//        label.numberOfLines = 0
-//        label.textColor = UIColor.Pallete.black
-//        label.font = UIFont.appFont(type: .phosphateProInlineTitle)
-//        label.text = text
-//        label.textAlignment = .center
-//        label.gradientColors = [UIColor.Pallete.lightGreen.cgColor, UIColor.Pallete.darkGreen.cgColor]
-//
-//        return label
-//    }
-    
-    func buildAuthStandartButton(text: String) -> MaterialButton {
+    // MARK: - Buttons
+
+    func buildLoginInAppStandartButton(text: String) -> MaterialButton {
         let button = MaterialButton(text: text,
                                     font: UIFont.appFont(type: .avenirTitle),
                                     textColor: UIColor.Pallete.black,
@@ -70,28 +72,48 @@ class AuthViewsFactory: AuthViewsFactoryProtocol {
         return button
     }
     
-    func buildSocialButton(type: AuthSocialButton.SocialType) -> AuthSocialButton {
+    func buildSocialButton(type: AuthSocialButton.SocialType, frame: CGRect = .zero) -> AuthSocialButton {
         
         let button: AuthSocialButton
         switch type {
         case .facebook:
             button = AuthSocialButton.init(type: .facebook,
-                                           frame: CGRect(origin: .zero,
-                                                         size: socialButtonsSize))
+                                           frame: frame)
         case .google:
             button = AuthSocialButton.init(type: .google,
-                                           frame: CGRect(origin: .zero,
-                                                         size: socialButtonsSize))
+                                           frame: frame)
         case .apple:
             button = AuthSocialButton.init(type: .apple,
-                                           frame: CGRect(origin: .zero,
-                                                         size: socialButtonsSize))
+                                           frame: frame)
         }
         
         return button
     }
     
-    func buildAuthTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField {
+    
+    // MARK: - StackViews
+    
+    func buildSocialButtonsStackView() -> UIStackView  {
+        
+        let socialButtonsStackView = UIStackView(axis: .horizontal,
+                                                 distribution: .fillEqually,
+                                                 spacing: 10)
+        
+        let facebookAuthButton = buildSocialButton(type: .facebook)
+        let googleAuthButton = buildSocialButton(type: .google)
+        let appleAuthButton = buildSocialButton(type: .apple)
+        
+        socialButtonsStackView.addArrangedSubviews(views: [facebookAuthButton,
+                                                           googleAuthButton,
+                                                           appleAuthButton])
+        
+        return socialButtonsStackView
+        
+    }
+
+    // MARK: - TextFields
+
+    func buildLoginInAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField {
         
         let textField = MaterialTextField(placeholder: placeHolderText,
                                           placeholderColor: UIColor.Pallete.blackWith(alpha: 0.4),

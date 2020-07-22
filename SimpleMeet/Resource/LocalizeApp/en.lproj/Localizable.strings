@@ -6,19 +6,33 @@
   Copyright © 2020 Дмитрий Федоринов. All rights reserved.
 */
 
-"Welcome" = "Welcome";
-"Welcome %d" = "Welcome %d";
-"Email" = "Email";
-"Login" = "Login";
+// MARK: - LoginInAppFlow
+
+// MARK: Labels
 "Get started with:" = "Get started with:";
 "or sign up with:" = "or sign up with";
 "Already onboard?" = "Already onboard?";
+"Login with:" = "Login with:";
+"or" = "or";
+"Need an account?" = "Need an account?";
 
-"registration" = "registrationEn";
-
-"Name" = "Name";
-
-"Password" = "Password";
-"Confirm Password" = "Confirm Password";
+// MARK: Buttons
+"Email" = "Email";
+"Login" = "Login";
 "Sign up" = "Sign up";
 
+// MARK: Images
+"registration" = "registrationEn";
+"authorization" = "authorizationEn";
+
+// MARK: TextFields
+"Name" = "Name";
+"Email" = "Email";
+"Password" = "Password";
+"Confirm Password" = "Confirm Password";
+
+
+// MARK: - <#Name#>Flow
+// MARK: Labels
+// MARK: Buttons
+// MARK: Images

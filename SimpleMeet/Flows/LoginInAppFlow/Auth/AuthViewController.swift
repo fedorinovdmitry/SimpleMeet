@@ -17,7 +17,7 @@ final class AuthViewController: UIViewController {
     
     var presenter: AuthPresenterProtocol!
     let configurator: AuthAssemblyProtocol = AuthAssembly()
-    let viewsFactory: AuthViewsFactoryProtocol = AuthViewsFactory()
+    let viewsFactory: LoginInAppViewsFactoryProtocol = LoginInAppViewsFactory()
     
     // MARK: - LifeStyle ViewController
     
@@ -31,15 +31,12 @@ final class AuthViewController: UIViewController {
     
     // MARK: - Setup Views
     
-    lazy var socialButtonsStackView = UIStackView(axis: .horizontal,
-                                                  distribution: .fillEqually,
-                                                  spacing: 10)
+    
     var logoImageView: UIImageView!
     
     var getStartedWithLabel: UILabel!
-    var facebookAuthButton: AuthSocialButton!
-    var googleAuthButton: AuthSocialButton!
-    var appleAuthButton: AuthSocialButton!
+    var socialButtonsStackView: UIStackView!
+    
     
     var signUpWithLabel: UILabel!
     var emailAuthButton: MaterialButton!
@@ -53,16 +50,14 @@ final class AuthViewController: UIViewController {
         
         logoImageView = viewsFactory.buildLogoImageView()
         
-        getStartedWithLabel = viewsFactory.buildAuthStandartLabel(text: "Get started with:".localized())
-        facebookAuthButton = viewsFactory.buildSocialButton(type: .facebook)
-        googleAuthButton = viewsFactory.buildSocialButton(type: .google)
-        appleAuthButton = viewsFactory.buildSocialButton(type: .apple)
+        getStartedWithLabel = viewsFactory.buildLoginInAppStandartLabel(text: "Get started with:".localized())
+        socialButtonsStackView = viewsFactory.buildSocialButtonsStackView()
         
-        signUpWithLabel = viewsFactory.buildAuthStandartLabel(text: "or sign up with:".localized())
-        emailAuthButton = viewsFactory.buildAuthStandartButton(text: "Email".localized())
+        signUpWithLabel = viewsFactory.buildLoginInAppStandartLabel(text: "or sign up with:".localized())
+        emailAuthButton = viewsFactory.buildLoginInAppStandartButton(text: "Email".localized())
         
-        alreadyOnBoard = viewsFactory.buildAuthStandartLabel(text: "Already onboard?".localized())
-        loginAuthButton = viewsFactory.buildAuthStandartButton(text: "Login".localized())
+        alreadyOnBoard = viewsFactory.buildLoginInAppStandartLabel(text: "Already onboard?".localized())
+        loginAuthButton = viewsFactory.buildLoginInAppStandartButton(text: "Login".localized())
         
         setupConstraints()
     }
@@ -71,10 +66,6 @@ final class AuthViewController: UIViewController {
     // MARK: Constraints
 
     func setupConstraints() {
-        
-        socialButtonsStackView.addArrangedSubviews(views: [facebookAuthButton,
-                                                           googleAuthButton,
-                                                           appleAuthButton])
         
         view.addSubviews(views: [logoImageView,
                                  getStartedWithLabel,

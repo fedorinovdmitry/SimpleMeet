@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class SignUpViewController: UIViewController, UITextFieldDelegate {
 
@@ -16,7 +17,7 @@ final class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     var presenter: SignUpPresenterProtocol!
     let configurator: SignUpAssemblyProtocol = SignUpAssembly()
-    let viewsFactory: AuthViewsFactoryProtocol = AuthViewsFactory()
+    let viewsFactory: LoginInAppViewsFactoryProtocol = LoginInAppViewsFactory()
     
     // MARK: - Properties
     
@@ -29,52 +30,10 @@ final class SignUpViewController: UIViewController, UITextFieldDelegate {
         presenter.configureView()
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        addKeyBoardNotification()
+        addGestureRecongizerContentView()
         
-        self.contentInScrollView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(returnTextView(gesture:))))
     }
-    
-    
-    // MARK: - Keyboard with scrollView setup
-
-    @objc func returnTextView(gesture: UIGestureRecognizer) {
-        guard activeField != nil else { return }
-        activeField?.resignFirstResponder()
-        activeField = nil
-    }
-
-    @objc func keyboard(notification: Notification) {
-        let userInfo = notification.userInfo!
-        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, to: view.window)
-        
-        if (notification.name == UIResponder.keyboardWillHideNotification) {
-            signUpScrollView.contentInset = UIEdgeInsets.zero
-        } else {
-            signUpScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
-        }
-        
-        signUpScrollView.scrollIndicatorInsets = signUpScrollView.contentInset
-    }
-    
-    var activeField: UITextField?
-    var lastOffset: CGPoint!
-    var keyboardHeight: CGFloat!
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        activeField = textField
-        lastOffset = self.signUpScrollView.contentOffset
-        return true
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        activeField?.resignFirstResponder()
-        activeField = nil
-        return true
-    }
-
-    
     
     // MARK: - Setup Views
     
@@ -96,22 +55,22 @@ final class SignUpViewController: UIViewController, UITextFieldDelegate {
     func createAndSetupViews() {
         view.backgroundColor = UIColor.Pallete.white
         
-        signUpTitleImageView = viewsFactory.buildRegistrationTitleImageView()
-        nameTextField = viewsFactory.buildAuthTextField(placeHolderText: "Name".localized(),
+        signUpTitleImageView = viewsFactory.buildTitleImageViewWith(image: .registration)
+        nameTextField = viewsFactory.buildLoginInAppTextField(placeHolderText: "Name".localized(),
                                                         delegate: self)
-        emailTextField = viewsFactory.buildAuthTextField(placeHolderText: "Email".localized(),
+        emailTextField = viewsFactory.buildLoginInAppTextField(placeHolderText: "Email".localized(),
                                                          delegate: self)
-        passwordTextField = viewsFactory.buildAuthTextField(placeHolderText: "Password".localized(),
+        passwordTextField = viewsFactory.buildLoginInAppTextField(placeHolderText: "Password".localized(),
                                                             delegate: self)
         passwordTextField.isSecureTextEntry = true
-        confirmPasswordTextField = viewsFactory.buildAuthTextField(placeHolderText: "Confirm Password".localized(),
+        confirmPasswordTextField = viewsFactory.buildLoginInAppTextField(placeHolderText: "Confirm Password".localized(),
                                                                    delegate: self)
         confirmPasswordTextField.isSecureTextEntry = true
         
-        signUpButton = viewsFactory.buildAuthStandartButton(text: "Sign up".localized())
-        alreadyOnBoardLabel = viewsFactory.buildAuthStandartLabel(text: "Already onboard?".localized())
+        signUpButton = viewsFactory.buildLoginInAppStandartButton(text: "Sign up".localized())
+        alreadyOnBoardLabel = viewsFactory.buildLoginInAppStandartLabel(text: "Already onboard?".localized())
         alreadyOnBoardLabel.textColor = UIColor.Pallete.blackWith(alpha: 0.4)
-        loginButton = viewsFactory.buildAuthStandartButton(text: "Login".localized())
+        loginButton = viewsFactory.buildLoginInAppStandartButton(text: "Login".localized())
         
         setupConstraints()
     }
@@ -138,9 +97,6 @@ final class SignUpViewController: UIViewController, UITextFieldDelegate {
             
         // signUpScrollView constraints
         signUpScrollView.snp.makeConstraints { make in
-//            make.centerX.equalToSuperview()
-//            make.width.equalToSuperview()
-            
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
@@ -211,13 +167,60 @@ final class SignUpViewController: UIViewController, UITextFieldDelegate {
             make.leading.equalToSuperview().offset(width*0.1)
             make.trailing.equalToSuperview().offset(-(width*0.1))
         }
-        // contentInScrollView constraints
         
     }
     
-    // MARK: - Public methods
+    // MARK: - Keyboard with scrollView setup
+
+    private var activeField: UITextField?
+    private var lastOffset: CGPoint!
     
-    // MARK: - Private methods
+    private func addKeyBoardNotification() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboard),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboard),
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
+                                               object: nil)
+    }
+    
+    private func addGestureRecongizerContentView() {
+        self.contentInScrollView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(returnTextView(gesture:))))
+    }
+    
+    @objc func returnTextView(gesture: UIGestureRecognizer) {
+        guard activeField != nil else { return }
+        activeField?.resignFirstResponder()
+        activeField = nil
+    }
+
+    @objc func keyboard(notification: Notification) {
+        guard let userInfo = notification.userInfo else { return }
+        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, to: view.window)
+        
+        if (notification.name == UIResponder.keyboardWillHideNotification) {
+            signUpScrollView.contentInset = UIEdgeInsets.zero
+        } else {
+            signUpScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+        }
+        
+        signUpScrollView.scrollIndicatorInsets = signUpScrollView.contentInset
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        activeField = textField
+        lastOffset = self.signUpScrollView.contentOffset
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        activeField?.resignFirstResponder()
+        activeField = nil
+        return true
+    }
 
 }
 
