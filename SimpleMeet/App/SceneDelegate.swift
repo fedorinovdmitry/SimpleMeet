@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let startVC2 = SignUpViewController()
         let startVC1 = AuthViewController()
-        let startVC = SignInViewController()
+        let startVC3 = SignInViewController()
+        let startVC = ProfileViewController()
         window?.rootViewController = startVC
         window?.makeKeyAndVisible()
     }

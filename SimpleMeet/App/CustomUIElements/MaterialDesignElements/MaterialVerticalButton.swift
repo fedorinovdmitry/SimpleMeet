@@ -11,7 +11,6 @@ import SnapKit
 
 class MaterialVerticalButton: UIControl {
     
-
     // MARK: - Public Properties
     
     var imageView: UIImageView!

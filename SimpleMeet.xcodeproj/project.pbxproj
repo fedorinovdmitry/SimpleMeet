@@ -52,9 +52,21 @@
 		608A486E24ADEA980023E58A /* UIColor+Dark+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */; };
 		608A487224ADEF470023E58A /* UIColor+Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A487024ADEF470023E58A /* UIColor+Pallete.swift */; };
 		608A487324ADEF470023E58A /* UIImage+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A487124ADEF470023E58A /* UIImage+app.swift */; };
+		60973F0D2509365E006FBE6F /* AuthViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973F0C2509365E006FBE6F /* AuthViewConstraints.swift */; };
+		60973F0F250936B1006FBE6F /* SignUpConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973F0E250936B1006FBE6F /* SignUpConstraints.swift */; };
+		60973F1325093727006FBE6F /* SignInConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973F1225093727006FBE6F /* SignInConstraints.swift */; };
+		60973F152509376F006FBE6F /* ProfileConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60973F142509376F006FBE6F /* ProfileConstraints.swift */; };
 		60A827C724C6078B00531E78 /* UIView + addSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A827C624C6078B00531E78 /* UIView + addSub.swift */; };
 		60A827C924C6079000531E78 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A827C824C6079000531E78 /* UIDevice+.swift */; };
 		60A827CB24C6079400531E78 /* UIView+heights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A827CA24C6079400531E78 /* UIView+heights.swift */; };
+		60BEC9C424C96EB5000C2B71 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9BE24C96EB5000C2B71 /* ProfilePresenter.swift */; };
+		60BEC9C524C96EB5000C2B71 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9BF24C96EB5000C2B71 /* ProfileRouter.swift */; };
+		60BEC9C624C96EB5000C2B71 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9C024C96EB5000C2B71 /* ProfileViewController.swift */; };
+		60BEC9C724C96EB5000C2B71 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9C124C96EB5000C2B71 /* ProfileProtocols.swift */; };
+		60BEC9C824C96EB5000C2B71 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9C224C96EB5000C2B71 /* ProfileAssembly.swift */; };
+		60BEC9C924C96EB5000C2B71 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9C324C96EB5000C2B71 /* ProfileInteractor.swift */; };
+		60BEC9CC24C973C3000C2B71 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9CB24C973C3000C2B71 /* AddPhotoView.swift */; };
+		60BEC9CE24C9F55B000C2B71 /* MaterialSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BEC9CD24C9F55B000C2B71 /* MaterialSegmentControl.swift */; };
 		6DDA1D8E6A2119D814AE6660 /* Pods_SimpleMeetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2DD27A076948C458EDA926 /* Pods_SimpleMeetTests.framework */; };
 		ACB74C560DFA5E383FB17893 /* Pods_SimpleMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AD4FE0B3B36972CFFCF7AE /* Pods_SimpleMeet.framework */; };
 /* End PBXBuildFile section */
@@ -124,9 +136,21 @@
 		608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dark+Hex.swift"; sourceTree = "<group>"; };
 		608A487024ADEF470023E58A /* UIColor+Pallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Pallete.swift"; sourceTree = "<group>"; };
 		608A487124ADEF470023E58A /* UIImage+app.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+app.swift"; sourceTree = "<group>"; };
+		60973F0C2509365E006FBE6F /* AuthViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewConstraints.swift; sourceTree = "<group>"; };
+		60973F0E250936B1006FBE6F /* SignUpConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConstraints.swift; sourceTree = "<group>"; };
+		60973F1225093727006FBE6F /* SignInConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInConstraints.swift; sourceTree = "<group>"; };
+		60973F142509376F006FBE6F /* ProfileConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConstraints.swift; sourceTree = "<group>"; };
 		60A827C624C6078B00531E78 /* UIView + addSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + addSub.swift"; sourceTree = "<group>"; };
 		60A827C824C6079000531E78 /* UIDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		60A827CA24C6079400531E78 /* UIView+heights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+heights.swift"; sourceTree = "<group>"; };
+		60BEC9BE24C96EB5000C2B71 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		60BEC9BF24C96EB5000C2B71 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		60BEC9C024C96EB5000C2B71 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		60BEC9C124C96EB5000C2B71 /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		60BEC9C224C96EB5000C2B71 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
+		60BEC9C324C96EB5000C2B71 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		60BEC9CB24C973C3000C2B71 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		60BEC9CD24C9F55B000C2B71 /* MaterialSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSegmentControl.swift; sourceTree = "<group>"; };
 		83AD4FE0B3B36972CFFCF7AE /* Pods_SimpleMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D3BD8A3F4F7044A8D363F6 /* Pods-SimpleMeetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeetTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleMeetTests/Pods-SimpleMeetTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0B4902EB8D8DCEE77B54576 /* Pods-SimpleMeetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeetTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMeetTests/Pods-SimpleMeetTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,9 +209,9 @@
 		6006215924BDAAE8005DBC90 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				60973F0B25093632006FBE6F /* AuthView */,
 				6006216424BDAC68005DBC90 /* AuthPresenter.swift */,
 				6006216524BDAC68005DBC90 /* AuthRouter.swift */,
-				6006216624BDAC68005DBC90 /* AuthViewController.swift */,
 				6006216724BDAC68005DBC90 /* AuthProtocols.swift */,
 				6006216824BDAC68005DBC90 /* AuthAssembly.swift */,
 				6006216924BDAC68005DBC90 /* AuthInteractor.swift */,
@@ -200,6 +224,7 @@
 			children = (
 				6006217624C58662005DBC90 /* MaterialDesignElements */,
 				6006217124BDB501005DBC90 /* Buttons */,
+				60BEC9CA24C97396000C2B71 /* Views */,
 			);
 			path = CustomUIElements;
 			sourceTree = "<group>";
@@ -222,6 +247,7 @@
 				6006218324C5D27D005DBC90 /* MaterialLoadingIndicator.swift */,
 				6006217924C588E2005DBC90 /* MaterialDesignExtensions.swift */,
 				6013051224C7014D005841C2 /* MaterialTextField.swift */,
+				60BEC9CD24C9F55B000C2B71 /* MaterialSegmentControl.swift */,
 			);
 			path = MaterialDesignElements;
 			sourceTree = "<group>";
@@ -229,9 +255,9 @@
 		6037B0FC24C6C72100F38F17 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				60973F10250936CB006FBE6F /* SingUpView */,
 				6037B0FD24C6C74D00F38F17 /* SignUpPresenter.swift */,
 				6037B0FE24C6C74D00F38F17 /* SignUpRouter.swift */,
-				6037B0FF24C6C74D00F38F17 /* SignUpViewController.swift */,
 				6037B10024C6C74D00F38F17 /* SignUpProtocols.swift */,
 				6037B10124C6C74D00F38F17 /* SignUpAssembly.swift */,
 				6037B10224C6C74D00F38F17 /* SignUpInteractor.swift */,
@@ -242,9 +268,9 @@
 		6037B10924C6CCBA00F38F17 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				60973F112509370D006FBE6F /* SignInView */,
 				6037B10A24C6CCE000F38F17 /* SignInPresenter.swift */,
 				6037B10B24C6CCE000F38F17 /* SignInRouter.swift */,
-				6037B10C24C6CCE000F38F17 /* SignInViewController.swift */,
 				6037B10D24C6CCE000F38F17 /* SignInProtocols.swift */,
 				6037B10E24C6CCE000F38F17 /* SignInAssembly.swift */,
 				6037B10F24C6CCE000F38F17 /* SignInInteractor.swift */,
@@ -266,10 +292,11 @@
 		6037B11F24C6D7F800F38F17 /* LoginInAppFlow */ = {
 			isa = PBXGroup;
 			children = (
+				6006218724C5EFDD005DBC90 /* LoginInAppViewsFactory.swift */,
 				6006215924BDAAE8005DBC90 /* Auth */,
 				6037B0FC24C6C72100F38F17 /* SignUp */,
 				6037B10924C6CCBA00F38F17 /* SignIn */,
-				6006218724C5EFDD005DBC90 /* LoginInAppViewsFactory.swift */,
+				60BEC9BD24C96E90000C2B71 /* Profile */,
 			);
 			path = LoginInAppFlow;
 			sourceTree = "<group>";
@@ -376,6 +403,63 @@
 				6006217024BDB4E2005DBC90 /* CustomUIElements */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		60973F0B25093632006FBE6F /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				6006216624BDAC68005DBC90 /* AuthViewController.swift */,
+				60973F0C2509365E006FBE6F /* AuthViewConstraints.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		60973F10250936CB006FBE6F /* SingUpView */ = {
+			isa = PBXGroup;
+			children = (
+				6037B0FF24C6C74D00F38F17 /* SignUpViewController.swift */,
+				60973F0E250936B1006FBE6F /* SignUpConstraints.swift */,
+			);
+			path = SingUpView;
+			sourceTree = "<group>";
+		};
+		60973F112509370D006FBE6F /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				6037B10C24C6CCE000F38F17 /* SignInViewController.swift */,
+				60973F1225093727006FBE6F /* SignInConstraints.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		60973F1625093793006FBE6F /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				60BEC9C024C96EB5000C2B71 /* ProfileViewController.swift */,
+				60973F142509376F006FBE6F /* ProfileConstraints.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		60BEC9BD24C96E90000C2B71 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				60973F1625093793006FBE6F /* ProfileView */,
+				60BEC9BE24C96EB5000C2B71 /* ProfilePresenter.swift */,
+				60BEC9BF24C96EB5000C2B71 /* ProfileRouter.swift */,
+				60BEC9C124C96EB5000C2B71 /* ProfileProtocols.swift */,
+				60BEC9C224C96EB5000C2B71 /* ProfileAssembly.swift */,
+				60BEC9C324C96EB5000C2B71 /* ProfileInteractor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		60BEC9CA24C97396000C2B71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60BEC9CB24C973C3000C2B71 /* AddPhotoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,6 +637,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60973F0F250936B1006FBE6F /* SignUpConstraints.swift in Sources */,
 				6006216A24BDAC68005DBC90 /* AuthPresenter.swift in Sources */,
 				60A827C724C6078B00531E78 /* UIView + addSub.swift in Sources */,
 				608A487224ADEF470023E58A /* UIColor+Pallete.swift in Sources */,
@@ -560,12 +645,16 @@
 				6006216E24BDAC68005DBC90 /* AuthAssembly.swift in Sources */,
 				6006216F24BDAC68005DBC90 /* AuthInteractor.swift in Sources */,
 				6037B10524C6C74D00F38F17 /* SignUpViewController.swift in Sources */,
+				60BEC9CC24C973C3000C2B71 /* AddPhotoView.swift in Sources */,
 				6037B10624C6C74D00F38F17 /* SignUpProtocols.swift in Sources */,
 				6037B11524C6CCE000F38F17 /* SignInInteractor.swift in Sources */,
 				6037B11024C6CCE000F38F17 /* SignInPresenter.swift in Sources */,
+				60BEC9C924C96EB5000C2B71 /* ProfileInteractor.swift in Sources */,
 				6006217C24C589B0005DBC90 /* RippleLayer.swift in Sources */,
 				608A486E24ADEA980023E58A /* UIColor+Dark+Hex.swift in Sources */,
 				6037B11224C6CCE000F38F17 /* SignInViewController.swift in Sources */,
+				60BEC9C724C96EB5000C2B71 /* ProfileProtocols.swift in Sources */,
+				60BEC9CE24C9F55B000C2B71 /* MaterialSegmentControl.swift in Sources */,
 				6037B10424C6C74D00F38F17 /* SignUpRouter.swift in Sources */,
 				6037B10324C6C74D00F38F17 /* SignUpPresenter.swift in Sources */,
 				6037B10724C6C74D00F38F17 /* SignUpAssembly.swift in Sources */,
@@ -575,22 +664,29 @@
 				6006218224C5D077005DBC90 /* MaterialButton.swift in Sources */,
 				6047F93724AE11CB009F013C /* String+Localize.swift in Sources */,
 				6006217324BDB53A005DBC90 /* AuthSocialButton.swift in Sources */,
+				60973F0D2509365E006FBE6F /* AuthViewConstraints.swift in Sources */,
 				608A484924ADE5260023E58A /* AppDelegate.swift in Sources */,
+				60973F1325093727006FBE6F /* SignInConstraints.swift in Sources */,
 				60A827C924C6079000531E78 /* UIDevice+.swift in Sources */,
+				60BEC9C524C96EB5000C2B71 /* ProfileRouter.swift in Sources */,
 				608A484B24ADE5260023E58A /* SceneDelegate.swift in Sources */,
+				60BEC9C824C96EB5000C2B71 /* ProfileAssembly.swift in Sources */,
 				6037B11124C6CCE000F38F17 /* SignInRouter.swift in Sources */,
 				6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */,
 				6006217A24C588E2005DBC90 /* MaterialDesignExtensions.swift in Sources */,
 				6006218824C5EFDD005DBC90 /* LoginInAppViewsFactory.swift in Sources */,
+				60973F152509376F006FBE6F /* ProfileConstraints.swift in Sources */,
 				6037B11424C6CCE000F38F17 /* SignInAssembly.swift in Sources */,
 				6006218624C5E594005DBC90 /* UIFont+app.swift in Sources */,
 				60A827CB24C6079400531E78 /* UIView+heights.swift in Sources */,
 				608A487324ADEF470023E58A /* UIImage+app.swift in Sources */,
 				6006216D24BDAC68005DBC90 /* AuthProtocols.swift in Sources */,
 				6037B10824C6C74D00F38F17 /* SignUpInteractor.swift in Sources */,
+				60BEC9C624C96EB5000C2B71 /* ProfileViewController.swift in Sources */,
 				6013051324C7014D005841C2 /* MaterialTextField.swift in Sources */,
 				6013050F24C6F183005841C2 /* UILabel+Gradient.swift in Sources */,
 				6006218424C5D27D005DBC90 /* MaterialLoadingIndicator.swift in Sources */,
+				60BEC9C424C96EB5000C2B71 /* ProfilePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

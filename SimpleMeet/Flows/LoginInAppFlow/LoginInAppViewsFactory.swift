@@ -15,18 +15,23 @@ protocol LoginInAppViewsFactoryProtocol {
     func buildTitleImageViewWith(image: UIImage.AppImage) -> UIImageView
     
     // Labels
-    func buildLoginInAppStandartLabel(text: String) -> UILabel
+    func buildStandartLabel(text: String) -> UILabel
     
     // Buttons
-    func buildLoginInAppStandartButton(text: String) -> MaterialButton
+    func buildStandartButton(text: String) -> MaterialButton
     func buildSocialButton(type: AuthSocialButton.SocialType, frame: CGRect) -> AuthSocialButton
     
     // StackViews
     func buildSocialButtonsStackView() -> UIStackView
     
     // TextFields
-    func buildLoginInAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField
+    func buildAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField
     
+    // Views
+    func buildAddPhotoView() -> AddPhotoView
+    
+    // SegmentControl
+    func buildSegmentControlWith(segmentsText: [String]) -> MaterialSegmentedControl
 }
 class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
     
@@ -49,7 +54,7 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
     
     // MARK: - Labels
 
-    func buildLoginInAppStandartLabel(text: String) -> UILabel {
+    func buildStandartLabel(text: String) -> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
         label.textColor = UIColor.Pallete.black
@@ -60,7 +65,7 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
     
     // MARK: - Buttons
 
-    func buildLoginInAppStandartButton(text: String) -> MaterialButton {
+    func buildStandartButton(text: String) -> MaterialButton {
         let button = MaterialButton(text: text,
                                     font: UIFont.appFont(type: .avenirTitle),
                                     textColor: UIColor.Pallete.black,
@@ -113,7 +118,7 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
 
     // MARK: - TextFields
 
-    func buildLoginInAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField {
+    func buildAppTextField(placeHolderText: String, delegate: UITextFieldDelegate?) -> MaterialTextField {
         
         let textField = MaterialTextField(placeholder: placeHolderText,
                                           placeholderColor: UIColor.Pallete.blackWith(alpha: 0.4),
@@ -129,6 +134,22 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
         return textField
     }
     
+    // MARK: - Views
     
+    func buildAddPhotoView() -> AddPhotoView {
+        return AddPhotoView()
+    }
+    
+    // MARK: - SegmentControll
+    
+    func buildSegmentControlWith(segmentsText: [String]) -> MaterialSegmentedControl {
+        
+        let segmentControl = MaterialSegmentedControl(selectorStyle: .fill, cornerRadius: 20.0)
+        for text in segmentsText {
+            segmentControl.appendTextSegment(text: text.localized(), textColor: UIColor.Pallete.black, rippleColor: UIColor.Pallete.lightGreen)
+        }
+        
+        return segmentControl
+    }
 }
 

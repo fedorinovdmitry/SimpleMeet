@@ -14,8 +14,12 @@ extension UIImage {
     enum AppImage: String, CaseIterable {
         case logo
         
+        case avatar
+        case plus
+        
         case registration
         case authorization
+        case setUpProfile
         
         case facebook
         case google
@@ -23,13 +27,7 @@ extension UIImage {
     }
     
     static func app(_ appImage: AppImage, rendering: RenderingMode = .automatic) -> UIImage? {
-        let imageName = UITraitCollection.current.userInterfaceStyle == .dark ? appImage.rawValue + "Dark" : appImage.rawValue
-        guard let image = UIImage(named: imageName)?.withRenderingMode(rendering)
-            else {
-                return UIImage(named: appImage.rawValue)?.withRenderingMode(rendering)
-        }
-        
-        return image
+        return UIImage(named: appImage.rawValue)?.withRenderingMode(rendering)
     }
     
 }

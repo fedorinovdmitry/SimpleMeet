@@ -10,26 +10,34 @@
 
 // MARK: Labels
 "Get started with:" = "Войдите с помощью:";
-"or sign up with:" = "или зарегистрируйтесь с";
+"or sign up with:" = "или зарегистрируйтесь через:";
 "Already onboard?" = "уже зарегистрированы?";
 "Login with:" = "Войти с помощью:";
 "or" = "или введите:";
 "Need an account?" = "Еще не зарегистрированы?";
+"Sex" = "Пол:";
 
 // MARK: Buttons
 "Email" = "Почта";
+"EmailWithRuAdaptation" = "Почту";
 "Login" = "Войти";
 "Sign up" = "Зарегистрироваться";
+"Male" = "Муж.";
+"Female" = "Жен.";
+"Go to chats!" = "Искать знакомства!";
 
 // MARK: Images
 "registration" = "registrationRu";
 "authorization" = "authorizationRu";
+"setUpProfile"= "setUpProfileRu";
 
 // MARK: TextFields
 "Name" = "Имя";
 "Email" = "Почта";
 "Password" = "Пароль";
 "Confirm Password" = "Повторить пароль";
+"Full name" = "Полное имя:";
+"About me" = "Обо мне:";
 
 
 // MARK: - <#Name#>Flow

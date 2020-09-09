@@ -15,7 +15,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "apple.png",
+      "filename" : "avatar-4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -26,7 +26,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "appleDark.png",
+      "filename" : "avatar-4Dark.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -15,21 +15,29 @@
 "Login with:" = "Login with:";
 "or" = "or";
 "Need an account?" = "Need an account?";
+"Sex" = "Sex:";
 
 // MARK: Buttons
 "Email" = "Email";
+"EmailWithRuAdaptation" = "Email";
 "Login" = "Login";
 "Sign up" = "Sign up";
+"Male" = "Male";
+"Female" = "Female";
+"Go to chats!" = "Go to chats!";
 
 // MARK: Images
 "registration" = "registrationEn";
 "authorization" = "authorizationEn";
+"setUpProfile"= "setUpProfileEn";
 
 // MARK: TextFields
 "Name" = "Name";
 "Email" = "Email";
 "Password" = "Password";
 "Confirm Password" = "Confirm Password";
+"Full name" = "Full name:";
+"About me" = "About me:";
 
 
 // MARK: - <#Name#>Flow
