@@ -49,14 +49,14 @@ final class AuthViewController: UIViewController {
         
         logoImageView = viewsFactory.buildLogoImageView()
         
-        getStartedWithLabel = viewsFactory.buildStandartLabel(text: "Get started with:".localized())
+        getStartedWithLabel = viewsFactory.buildStandartLabel(text: "Get started with:".localized(with: .loginInAppFlow))
         socialButtonsStackView = viewsFactory.buildSocialButtonsStackView()
         
-        signUpWithLabel = viewsFactory.buildStandartLabel(text: "or sign up with:".localized())
-        emailAuthButton = viewsFactory.buildStandartButton(text: "EmailWithRuAdaptation".localized())
+        signUpWithLabel = viewsFactory.buildStandartLabel(text: "or sign up with:".localized(with: .loginInAppFlow))
+        emailAuthButton = viewsFactory.buildStandartButton(text: "EmailWithRuAdaptation".localized(with: .loginInAppFlow))
         
-        alreadyOnBoard = viewsFactory.buildStandartLabel(text: "Already onboard?".localized())
-        loginAuthButton = viewsFactory.buildStandartButton(text: "Login".localized())
+        alreadyOnBoard = viewsFactory.buildStandartLabel(text: "Already onboard?".localized(with: .loginInAppFlow))
+        loginAuthButton = viewsFactory.buildStandartButton(text: "Login".localized(with: .loginInAppFlow))
         
         setupConstraints()
     }
@@ -82,7 +82,7 @@ extension AuthViewController: AuthViewProtocol {
 
 import SwiftUI
 
-struct AutViewControllerProvider: PreviewProvider {
+struct AuthViewControllerProvider: PreviewProvider {
     static var previews: some View {
         ContainerView().edgesIgnoringSafeArea(.all)
     }

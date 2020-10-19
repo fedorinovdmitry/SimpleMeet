@@ -19,6 +19,8 @@ public enum Device {
     case tv
     case carPlay
     
+    case mac
+    
     case unknown
 }
 
@@ -44,6 +46,7 @@ public extension UIDevice {
         case .pad: return .iPad
         case .tv: return .tv
         case .carPlay: return .carPlay
+        case .mac: return .mac
         case .unspecified: return .unknown
         @unknown default: return .unknown
         }

@@ -47,7 +47,7 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
     func buildTitleImageViewWith(image: UIImage.AppImage) -> UIImageView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: image.rawValue.localized())
+        imageView.image = UIImage(named: image.rawValue.localized(with: .loginInAppFlow))
         return imageView
     }
     
@@ -146,7 +146,7 @@ class LoginInAppViewsFactory: LoginInAppViewsFactoryProtocol {
         
         let segmentControl = MaterialSegmentedControl(selectorStyle: .fill, cornerRadius: 20.0)
         for text in segmentsText {
-            segmentControl.appendTextSegment(text: text.localized(), textColor: UIColor.Pallete.black, rippleColor: UIColor.Pallete.lightGreen)
+            segmentControl.appendTextSegment(text: text, textColor: UIColor.Pallete.black, rippleColor: UIColor.Pallete.lightGreen)
         }
         
         return segmentControl

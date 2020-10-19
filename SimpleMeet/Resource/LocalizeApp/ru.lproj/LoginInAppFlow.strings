@@ -1,5 +1,5 @@
 /* 
-  Localizable.strings
+  LoginInAppFlow.strings
   SimpleMeet
 
   Created by Дмитрий Федоринов on 02.07.2020.
@@ -22,8 +22,8 @@
 "EmailWithRuAdaptation" = "Почту";
 "Login" = "Войти";
 "Sign up" = "Зарегистрироваться";
-"Male" = "Муж.";
-"Female" = "Жен.";
+"Male" = "Муж";
+"Female" = "Жен";
 "Go to chats!" = "Искать знакомства!";
 
 // MARK: Images
@@ -40,7 +40,4 @@
 "About me" = "Обо мне:";
 
 
-// MARK: - <#Name#>Flow
-// MARK: Labels
-// MARK: Buttons
-// MARK: Images
+

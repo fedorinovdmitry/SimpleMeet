@@ -49,23 +49,20 @@ class AddPhotoView: UIView {
     private func setupConstraints() {
         addSubviews(views: [circleImageView, plusButton])
     
-//        let height = frame.height
-        let width = frame.width
+        let width = round(frame.width)
         
         circleImageView.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
-            make.centerY.equalToSuperview()
-//            make.height.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.7)
-            make.height.equalTo(circleImageView.snp.width)
+            make.leading.equalToSuperview().labeled("circleimageLeading")
+            make.centerY.equalToSuperview().labeled("circleimageCenterY")
+            make.width.equalToSuperview().multipliedBy(0.7).labeled("circleimageWidth")
+            make.height.equalTo(circleImageView.snp.width).labeled("circleimageHeight")
         }
         
         plusButton.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.trailing.equalToSuperview()
-            make.width.equalTo(width*0.2)
+            make.width.equalTo(width*0.2).labeled("plusButtonWidth")
             make.height.equalTo(width*0.2)
-            make.leading.lessThanOrEqualTo(circleImageView.snp.trailing).offset(width*0.1)
         }
         
         

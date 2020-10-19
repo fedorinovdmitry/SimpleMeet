@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D42A2FB253DCA4200200C2C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A2FA253DCA4200200C2C /* MainTabBarController.swift */; };
+		2D42A308253DCB4B00200C2C /* MyChatsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A302253DCB4B00200C2C /* MyChatsListPresenter.swift */; };
+		2D42A309253DCB4B00200C2C /* MyChatsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A303253DCB4B00200C2C /* MyChatsListRouter.swift */; };
+		2D42A30A253DCB4B00200C2C /* MyChatsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */; };
+		2D42A30B253DCB4B00200C2C /* MyChatsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A305253DCB4B00200C2C /* MyChatsListProtocols.swift */; };
+		2D42A30C253DCB4B00200C2C /* MyChatsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A306253DCB4B00200C2C /* MyChatsListAssembly.swift */; };
+		2D42A30D253DCB4B00200C2C /* MyChatsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A307253DCB4B00200C2C /* MyChatsListInteractor.swift */; };
+		2D42A316253DCB8200200C2C /* PeopleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A310253DCB8200200C2C /* PeopleListPresenter.swift */; };
+		2D42A317253DCB8200200C2C /* PeopleListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A311253DCB8200200C2C /* PeopleListRouter.swift */; };
+		2D42A318253DCB8200200C2C /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A312253DCB8200200C2C /* PeopleListViewController.swift */; };
+		2D42A319253DCB8200200C2C /* PeopleListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A313253DCB8200200C2C /* PeopleListProtocols.swift */; };
+		2D42A31A253DCB8200200C2C /* PeopleListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A314253DCB8200200C2C /* PeopleListAssembly.swift */; };
+		2D42A31B253DCB8200200C2C /* PeopleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A315253DCB8200200C2C /* PeopleListInteractor.swift */; };
+		2D42A324253DD39700200C2C /* MainFlow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D42A326253DD39700200C2C /* MainFlow.strings */; };
 		6006216A24BDAC68005DBC90 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216424BDAC68005DBC90 /* AuthPresenter.swift */; };
 		6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216524BDAC68005DBC90 /* AuthRouter.swift */; };
 		6006216C24BDAC68005DBC90 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216624BDAC68005DBC90 /* AuthViewController.swift */; };
@@ -41,7 +55,7 @@
 		6037B11C24C6D1CB00F38F17 /* Phosphate Pro Cond Solid Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11A24C6D1BA00F38F17 /* Phosphate Pro Cond Solid Regular.otf */; };
 		6037B11D24C6D1CF00F38F17 /* PhosphatePro-Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11924C6D1B900F38F17 /* PhosphatePro-Inline.otf */; };
 		6037B11E24C6D1D200F38F17 /* PhosphatePro-Solid.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6037B11824C6D1B900F38F17 /* PhosphatePro-Solid.otf */; };
-		6047F92A24AE041B009F013C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6047F92C24AE041B009F013C /* Localizable.strings */; };
+		6047F92A24AE041B009F013C /* LoginInAppFlow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6047F92C24AE041B009F013C /* LoginInAppFlow.strings */; };
 		6047F93124AE083D009F013C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6047F93324AE083D009F013C /* InfoPlist.strings */; };
 		6047F93724AE11CB009F013C /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6047F93624AE11CB009F013C /* String+Localize.swift */; };
 		608A484924ADE5260023E58A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A484824ADE5260023E58A /* AppDelegate.swift */; };
@@ -82,6 +96,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D42A2FA253DCA4200200C2C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2D42A302253DCB4B00200C2C /* MyChatsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListPresenter.swift; sourceTree = "<group>"; };
+		2D42A303253DCB4B00200C2C /* MyChatsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListRouter.swift; sourceTree = "<group>"; };
+		2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListViewController.swift; sourceTree = "<group>"; };
+		2D42A305253DCB4B00200C2C /* MyChatsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListProtocols.swift; sourceTree = "<group>"; };
+		2D42A306253DCB4B00200C2C /* MyChatsListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListAssembly.swift; sourceTree = "<group>"; };
+		2D42A307253DCB4B00200C2C /* MyChatsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListInteractor.swift; sourceTree = "<group>"; };
+		2D42A310253DCB8200200C2C /* PeopleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
+		2D42A311253DCB8200200C2C /* PeopleListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListRouter.swift; sourceTree = "<group>"; };
+		2D42A312253DCB8200200C2C /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		2D42A313253DCB8200200C2C /* PeopleListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListProtocols.swift; sourceTree = "<group>"; };
+		2D42A314253DCB8200200C2C /* PeopleListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListAssembly.swift; sourceTree = "<group>"; };
+		2D42A315253DCB8200200C2C /* PeopleListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListInteractor.swift; sourceTree = "<group>"; };
+		2D42A325253DD39700200C2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainFlow.strings; sourceTree = "<group>"; };
+		2D42A329253DD39B00200C2C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainFlow.strings; sourceTree = "<group>"; };
 		40E45C3B4BC7E72B6BB43AF0 /* Pods-SimpleMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeet.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		6006216424BDAC68005DBC90 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		6006216524BDAC68005DBC90 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
@@ -119,8 +148,8 @@
 		6037B11824C6D1B900F38F17 /* PhosphatePro-Solid.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Solid.otf"; sourceTree = "<group>"; };
 		6037B11924C6D1B900F38F17 /* PhosphatePro-Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PhosphatePro-Inline.otf"; sourceTree = "<group>"; };
 		6037B11A24C6D1BA00F38F17 /* Phosphate Pro Cond Solid Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phosphate Pro Cond Solid Regular.otf"; sourceTree = "<group>"; };
-		6047F92B24AE041B009F013C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6047F92D24AE041F009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6047F92B24AE041B009F013C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LoginInAppFlow.strings; sourceTree = "<group>"; };
+		6047F92D24AE041F009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LoginInAppFlow.strings; sourceTree = "<group>"; };
 		6047F93224AE083D009F013C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6047F93424AE083E009F013C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6047F93624AE11CB009F013C /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
@@ -178,6 +207,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D42A2F5253DC9A000200C2C /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2D42A2F6253DC9CB00200C2C /* MainTabBar */,
+				2D42A301253DCAE500200C2C /* MyChatsList */,
+				2D42A300253DCACC00200C2C /* PeopleList */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		2D42A2F6253DC9CB00200C2C /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2D42A2FA253DCA4200200C2C /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		2D42A300253DCACC00200C2C /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				2D42A310253DCB8200200C2C /* PeopleListPresenter.swift */,
+				2D42A311253DCB8200200C2C /* PeopleListRouter.swift */,
+				2D42A312253DCB8200200C2C /* PeopleListViewController.swift */,
+				2D42A313253DCB8200200C2C /* PeopleListProtocols.swift */,
+				2D42A314253DCB8200200C2C /* PeopleListAssembly.swift */,
+				2D42A315253DCB8200200C2C /* PeopleListInteractor.swift */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		2D42A301253DCAE500200C2C /* MyChatsList */ = {
+			isa = PBXGroup;
+			children = (
+				2D42A302253DCB4B00200C2C /* MyChatsListPresenter.swift */,
+				2D42A303253DCB4B00200C2C /* MyChatsListRouter.swift */,
+				2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */,
+				2D42A305253DCB4B00200C2C /* MyChatsListProtocols.swift */,
+				2D42A306253DCB4B00200C2C /* MyChatsListAssembly.swift */,
+				2D42A307253DCB4B00200C2C /* MyChatsListInteractor.swift */,
+			);
+			path = MyChatsList;
+			sourceTree = "<group>";
+		};
 		4FA2616E6690D2655CA31765 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +274,7 @@
 		6006215824BDAAD9005DBC90 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				2D42A2F5253DC9A000200C2C /* MainFlow */,
 				6037B11F24C6D7F800F38F17 /* LoginInAppFlow */,
 			);
 			path = Flows;
@@ -304,8 +378,9 @@
 		6047F92E24AE065B009F013C /* LocalizeApp */ = {
 			isa = PBXGroup;
 			children = (
-				6047F92C24AE041B009F013C /* Localizable.strings */,
+				6047F92C24AE041B009F013C /* LoginInAppFlow.strings */,
 				6047F93324AE083D009F013C /* InfoPlist.strings */,
+				2D42A326253DD39700200C2C /* MainFlow.strings */,
 			);
 			path = LocalizeApp;
 			sourceTree = "<group>";
@@ -510,7 +585,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Дмитрий Федоринов";
 				TargetAttributes = {
 					608A484424ADE5260023E58A = {
@@ -550,8 +625,9 @@
 				608A485524ADE52B0023E58A /* LaunchScreen.storyboard in Resources */,
 				6047F93124AE083D009F013C /* InfoPlist.strings in Resources */,
 				6037B11B24C6D1C700F38F17 /* Phosphate Pro Cond Inline Regular.otf in Resources */,
+				2D42A324253DD39700200C2C /* MainFlow.strings in Resources */,
 				6037B11C24C6D1CB00F38F17 /* Phosphate Pro Cond Solid Regular.otf in Resources */,
-				6047F92A24AE041B009F013C /* Localizable.strings in Resources */,
+				6047F92A24AE041B009F013C /* LoginInAppFlow.strings in Resources */,
 				608A485224ADE52B0023E58A /* Assets.xcassets in Resources */,
 				6006217524BDB8AF005DBC90 /* SocialImages.xcassets in Resources */,
 				6037B11D24C6D1CF00F38F17 /* PhosphatePro-Inline.otf in Resources */,
@@ -639,14 +715,20 @@
 			files = (
 				60973F0F250936B1006FBE6F /* SignUpConstraints.swift in Sources */,
 				6006216A24BDAC68005DBC90 /* AuthPresenter.swift in Sources */,
+				2D42A308253DCB4B00200C2C /* MyChatsListPresenter.swift in Sources */,
+				2D42A309253DCB4B00200C2C /* MyChatsListRouter.swift in Sources */,
 				60A827C724C6078B00531E78 /* UIView + addSub.swift in Sources */,
 				608A487224ADEF470023E58A /* UIColor+Pallete.swift in Sources */,
 				6006216C24BDAC68005DBC90 /* AuthViewController.swift in Sources */,
 				6006216E24BDAC68005DBC90 /* AuthAssembly.swift in Sources */,
 				6006216F24BDAC68005DBC90 /* AuthInteractor.swift in Sources */,
 				6037B10524C6C74D00F38F17 /* SignUpViewController.swift in Sources */,
+				2D42A30D253DCB4B00200C2C /* MyChatsListInteractor.swift in Sources */,
 				60BEC9CC24C973C3000C2B71 /* AddPhotoView.swift in Sources */,
+				2D42A31A253DCB8200200C2C /* PeopleListAssembly.swift in Sources */,
+				2D42A31B253DCB8200200C2C /* PeopleListInteractor.swift in Sources */,
 				6037B10624C6C74D00F38F17 /* SignUpProtocols.swift in Sources */,
+				2D42A316253DCB8200200C2C /* PeopleListPresenter.swift in Sources */,
 				6037B11524C6CCE000F38F17 /* SignInInteractor.swift in Sources */,
 				6037B11024C6CCE000F38F17 /* SignInPresenter.swift in Sources */,
 				60BEC9C924C96EB5000C2B71 /* ProfileInteractor.swift in Sources */,
@@ -658,6 +740,7 @@
 				6037B10424C6C74D00F38F17 /* SignUpRouter.swift in Sources */,
 				6037B10324C6C74D00F38F17 /* SignUpPresenter.swift in Sources */,
 				6037B10724C6C74D00F38F17 /* SignUpAssembly.swift in Sources */,
+				2D42A318253DCB8200200C2C /* PeopleListViewController.swift in Sources */,
 				6037B0FB24C6C1A500F38F17 /* UIStackView+addArrSub.swift in Sources */,
 				6006217824C5869B005DBC90 /* MaterialVerticalButton.swift in Sources */,
 				6037B11324C6CCE000F38F17 /* SignInProtocols.swift in Sources */,
@@ -665,28 +748,34 @@
 				6047F93724AE11CB009F013C /* String+Localize.swift in Sources */,
 				6006217324BDB53A005DBC90 /* AuthSocialButton.swift in Sources */,
 				60973F0D2509365E006FBE6F /* AuthViewConstraints.swift in Sources */,
+				2D42A319253DCB8200200C2C /* PeopleListProtocols.swift in Sources */,
 				608A484924ADE5260023E58A /* AppDelegate.swift in Sources */,
 				60973F1325093727006FBE6F /* SignInConstraints.swift in Sources */,
 				60A827C924C6079000531E78 /* UIDevice+.swift in Sources */,
+				2D42A30C253DCB4B00200C2C /* MyChatsListAssembly.swift in Sources */,
 				60BEC9C524C96EB5000C2B71 /* ProfileRouter.swift in Sources */,
 				608A484B24ADE5260023E58A /* SceneDelegate.swift in Sources */,
 				60BEC9C824C96EB5000C2B71 /* ProfileAssembly.swift in Sources */,
 				6037B11124C6CCE000F38F17 /* SignInRouter.swift in Sources */,
 				6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */,
 				6006217A24C588E2005DBC90 /* MaterialDesignExtensions.swift in Sources */,
+				2D42A317253DCB8200200C2C /* PeopleListRouter.swift in Sources */,
 				6006218824C5EFDD005DBC90 /* LoginInAppViewsFactory.swift in Sources */,
 				60973F152509376F006FBE6F /* ProfileConstraints.swift in Sources */,
 				6037B11424C6CCE000F38F17 /* SignInAssembly.swift in Sources */,
 				6006218624C5E594005DBC90 /* UIFont+app.swift in Sources */,
+				2D42A30B253DCB4B00200C2C /* MyChatsListProtocols.swift in Sources */,
 				60A827CB24C6079400531E78 /* UIView+heights.swift in Sources */,
 				608A487324ADEF470023E58A /* UIImage+app.swift in Sources */,
 				6006216D24BDAC68005DBC90 /* AuthProtocols.swift in Sources */,
 				6037B10824C6C74D00F38F17 /* SignUpInteractor.swift in Sources */,
 				60BEC9C624C96EB5000C2B71 /* ProfileViewController.swift in Sources */,
+				2D42A30A253DCB4B00200C2C /* MyChatsListViewController.swift in Sources */,
 				6013051324C7014D005841C2 /* MaterialTextField.swift in Sources */,
 				6013050F24C6F183005841C2 /* UILabel+Gradient.swift in Sources */,
 				6006218424C5D27D005DBC90 /* MaterialLoadingIndicator.swift in Sources */,
 				60BEC9C424C96EB5000C2B71 /* ProfilePresenter.swift in Sources */,
+				2D42A2FB253DCA4200200C2C /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,13 +798,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6047F92C24AE041B009F013C /* Localizable.strings */ = {
+		2D42A326253DD39700200C2C /* MainFlow.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D42A325253DD39700200C2C /* en */,
+				2D42A329253DD39B00200C2C /* ru */,
+			);
+			name = MainFlow.strings;
+			sourceTree = "<group>";
+		};
+		6047F92C24AE041B009F013C /* LoginInAppFlow.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6047F92B24AE041B009F013C /* en */,
 				6047F92D24AE041F009F013C /* ru */,
 			);
-			name = Localizable.strings;
+			name = LoginInAppFlow.strings;
 			sourceTree = "<group>";
 		};
 		6047F93324AE083D009F013C /* InfoPlist.strings */ = {
@@ -767,6 +865,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -828,6 +927,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

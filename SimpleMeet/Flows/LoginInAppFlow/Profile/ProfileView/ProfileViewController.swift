@@ -57,17 +57,20 @@ final class ProfileViewController: UIViewController {
         
         addPhotoView = viewsFactory.buildAddPhotoView()
         
-        fullNameTextField = viewsFactory.buildAppTextField(placeHolderText: "Full name".localized(),
+        fullNameTextField = viewsFactory.buildAppTextField(placeHolderText: "Full name".localized(with: .loginInAppFlow),
                                                                   delegate: self)
-        aboutMeTextField = viewsFactory.buildAppTextField(placeHolderText: "About me".localized(),
+        aboutMeTextField = viewsFactory.buildAppTextField(placeHolderText: "About me".localized(with: .loginInAppFlow),
         delegate: self)
         
-        sexLabel = viewsFactory.buildStandartLabel(text: "Sex".localized())
+        sexLabel = viewsFactory.buildStandartLabel(text: "Sex".localized(with: .loginInAppFlow))
         
-        sexSegmentControl = viewsFactory.buildSegmentControlWith(segmentsText: ["Male",
-                                                                                "Female"])
+        let male = "Male".localized(with: .loginInAppFlow)
+        let female = "Female".localized(with: .loginInAppFlow)
+        print(male)
+        sexSegmentControl = viewsFactory.buildSegmentControlWith(segmentsText: [male,
+                                                                                female ])
         
-        goToChatsButton = viewsFactory.buildStandartButton(text: "Go to chats!".localized())
+        goToChatsButton = viewsFactory.buildStandartButton(text: "Go to chats!".localized(with: .loginInAppFlow))
         
         
         setupConstraints()

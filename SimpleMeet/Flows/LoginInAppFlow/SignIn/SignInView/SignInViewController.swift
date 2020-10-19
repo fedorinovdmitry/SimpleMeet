@@ -57,20 +57,20 @@ final class SignInViewController: UIViewController, UITextFieldDelegate {
         
         signInTitleImageView = viewsFactory.buildTitleImageViewWith(image: .authorization)
         
-        loginWithLabel = viewsFactory.buildStandartLabel(text: "Login with:".localized())
+        loginWithLabel = viewsFactory.buildStandartLabel(text: "Login with:".localized(with: .loginInAppFlow))
         socialButtonsStackView = viewsFactory.buildSocialButtonsStackView()
         
-        orLabel = viewsFactory.buildStandartLabel(text: "or".localized())
+        orLabel = viewsFactory.buildStandartLabel(text: "or".localized(with: .loginInAppFlow))
         
-        emailTextField = viewsFactory.buildAppTextField(placeHolderText: "Email".localized(),
+        emailTextField = viewsFactory.buildAppTextField(placeHolderText: "Email".localized(with: .loginInAppFlow),
                                                          delegate: self)
-        passwordTextField = viewsFactory.buildAppTextField(placeHolderText: "Password".localized(),
+        passwordTextField = viewsFactory.buildAppTextField(placeHolderText: "Password".localized(with: .loginInAppFlow),
                                                             delegate: self)
         
-        loginButton = viewsFactory.buildStandartButton(text: "Login".localized())
+        loginButton = viewsFactory.buildStandartButton(text: "Login".localized(with: .loginInAppFlow))
         
-        needAnAccountLabel = viewsFactory.buildStandartLabel(text: "Need an account?".localized())
-        signUpButton = viewsFactory.buildStandartButton(text: "Sign up".localized())
+        needAnAccountLabel = viewsFactory.buildStandartLabel(text: "Need an account?".localized(with: .loginInAppFlow))
+        signUpButton = viewsFactory.buildStandartButton(text: "Sign up".localized(with: .loginInAppFlow))
         
         setupConstraints()
     }

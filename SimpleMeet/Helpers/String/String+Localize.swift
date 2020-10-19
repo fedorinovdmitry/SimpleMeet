@@ -10,6 +10,11 @@ import Foundation
 
 extension String {
     
+    enum AppTabbleName: String {
+        case loginInAppFlow = "LoginInAppFlow"
+        case mainFlow = "MainFlow"
+    }
+    
     func localized(bundle: Bundle = .main,
                    tableName: String = "Localizable",
                    comment: String = "") -> String {
@@ -17,5 +22,9 @@ extension String {
                                  tableName: tableName,
                                  value: "**\(self)**",
                                  comment: comment)
+    }
+    
+    func localized(with tableName: AppTabbleName) -> String {
+        return localized(tableName: tableName.rawValue)
     }
 }

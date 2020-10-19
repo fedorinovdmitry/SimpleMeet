@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let startVC1 = AuthViewController()
         let startVC3 = SignInViewController()
         let startVC = ProfileViewController()
-        window?.rootViewController = startVC
+        let startVC4 = MainTabBarController()
+        window?.rootViewController = startVC4
         window?.makeKeyAndVisible()
     }
 

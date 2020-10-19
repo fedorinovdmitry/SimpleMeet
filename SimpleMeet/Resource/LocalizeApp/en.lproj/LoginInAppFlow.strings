@@ -1,5 +1,5 @@
 /* 
-  Localizable.strings
+  LoginInAppFlow.strings
   SimpleMeet
 
   Created by Дмитрий Федоринов on 02.07.2020.
@@ -39,8 +39,3 @@
 "Full name" = "Full name:";
 "About me" = "About me:";
 
-
-// MARK: - <#Name#>Flow
-// MARK: Labels
-// MARK: Buttons
-// MARK: Images

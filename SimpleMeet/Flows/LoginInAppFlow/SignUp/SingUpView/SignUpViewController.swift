@@ -55,21 +55,21 @@ final class SignUpViewController: UIViewController {
         view.backgroundColor = UIColor.Pallete.white
         
         signUpTitleImageView = viewsFactory.buildTitleImageViewWith(image: .registration)
-        nameTextField = viewsFactory.buildAppTextField(placeHolderText: "Name".localized(),
+        nameTextField = viewsFactory.buildAppTextField(placeHolderText: "Name".localized(with: .loginInAppFlow),
                                                         delegate: self)
-        emailTextField = viewsFactory.buildAppTextField(placeHolderText: "Email".localized(),
+        emailTextField = viewsFactory.buildAppTextField(placeHolderText: "Email".localized(with: .loginInAppFlow),
                                                          delegate: self)
-        passwordTextField = viewsFactory.buildAppTextField(placeHolderText: "Password".localized(),
+        passwordTextField = viewsFactory.buildAppTextField(placeHolderText: "Password".localized(with: .loginInAppFlow),
                                                             delegate: self)
         passwordTextField.isSecureTextEntry = true
-        confirmPasswordTextField = viewsFactory.buildAppTextField(placeHolderText: "Confirm Password".localized(),
+        confirmPasswordTextField = viewsFactory.buildAppTextField(placeHolderText: "Confirm Password".localized(with: .loginInAppFlow),
                                                                    delegate: self)
         confirmPasswordTextField.isSecureTextEntry = true
         
-        signUpButton = viewsFactory.buildStandartButton(text: "Sign up".localized())
-        alreadyOnBoardLabel = viewsFactory.buildStandartLabel(text: "Already onboard?".localized())
+        signUpButton = viewsFactory.buildStandartButton(text: "Sign up".localized(with: .loginInAppFlow))
+        alreadyOnBoardLabel = viewsFactory.buildStandartLabel(text: "Already onboard?".localized(with: .loginInAppFlow))
         alreadyOnBoardLabel.textColor = UIColor.Pallete.blackWith(alpha: 0.4)
-        loginButton = viewsFactory.buildStandartButton(text: "Login".localized())
+        loginButton = viewsFactory.buildStandartButton(text: "Login".localized(with: .loginInAppFlow))
         
         setupConstraints()
     }

@@ -20,7 +20,7 @@ extension UIColor {
         static let blackGreen = UIColor.color(light: darkGreen, dark: .white)
 
         
-        
+        static let gray = UIColor.color(light: #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9411764706, alpha: 1), dark: #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1))
         
         static let lightGreen = hex("00EB00")
         static let darkGreen = hex("2E482E")
