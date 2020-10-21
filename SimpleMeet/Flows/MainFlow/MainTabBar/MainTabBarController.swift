@@ -28,7 +28,8 @@ class MainTabBarController: UITabBarController {
         
         tabBar.tintColor = UIColor.Pallete.lightGreen
         tabBar.unselectedItemTintColor = UIColor.Pallete.black
-        tabBar.backgroundImage = UIImage()
+        tabBar.backgroundColor = UIColor.Pallete.white
+        
         
     }
     

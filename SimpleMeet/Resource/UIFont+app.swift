@@ -23,6 +23,8 @@ extension UIFont {
         case avenirTitle
         case avenirWith(customSize: CGFloat)
         case phosphateProInlineTitle
+        case laoSangamMN
+        case laoSangamMNmini
     }
     
     static func appFont(type: AppFontType) -> UIFont {
@@ -36,6 +38,10 @@ extension UIFont {
             font = UIFont.init(name: "Avenir", size: customSize)
         case .phosphateProInlineTitle:
             font = UIFont(name: "PhosphatePro-Inline", size: fontSize+10)
+        case .laoSangamMN:
+            font = UIFont(name: "Lao Sangam MN", size: fontSize)
+        case .laoSangamMNmini:
+            font = UIFont(name: "Lao Sangam MN", size: fontSize-3)
         }
         return font == nil ? UIFont.systemFont(ofSize: fontSize) : font!
         

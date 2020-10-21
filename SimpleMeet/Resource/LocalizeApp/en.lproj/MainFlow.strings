@@ -1,0 +1,19 @@
+/* 
+  MainFlow.strings
+  SimpleMeet
+
+  Created by Дмитрий Федоринов on 19.10.2020.
+  Copyright © 2020 Дмитрий Федоринов. All rights reserved.
+*/
+
+// MARK: - MainFlow
+
+"People" = "People";
+"Messenger" = "Messenger";
+
+
+// MARK: Labels
+// MARK: Buttons
+// MARK: Images
+
+

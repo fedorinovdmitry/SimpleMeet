@@ -21,6 +21,11 @@
 		2D42A31A253DCB8200200C2C /* PeopleListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A314253DCB8200200C2C /* PeopleListAssembly.swift */; };
 		2D42A31B253DCB8200200C2C /* PeopleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D42A315253DCB8200200C2C /* PeopleListInteractor.swift */; };
 		2D42A324253DD39700200C2C /* MainFlow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D42A326253DD39700200C2C /* MainFlow.strings */; };
+		2DBC497E2540388C008AA710 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC497D2540388C008AA710 /* ActiveChatCell.swift */; };
+		2DBC498425403989008AA710 /* MyChatsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC498325403989008AA710 /* MyChatsListModels.swift */; };
+		2DF6376F2540749A0031AFDA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6376E2540749A0031AFDA /* GradientView.swift */; };
+		2DF6377525407CA00031AFDA /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6377425407CA00031AFDA /* WaitingChatCell.swift */; };
+		2DF6377B25407D340031AFDA /* SelfConfigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6377A25407D340031AFDA /* SelfConfigureCell.swift */; };
 		6006216A24BDAC68005DBC90 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216424BDAC68005DBC90 /* AuthPresenter.swift */; };
 		6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216524BDAC68005DBC90 /* AuthRouter.swift */; };
 		6006216C24BDAC68005DBC90 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6006216624BDAC68005DBC90 /* AuthViewController.swift */; };
@@ -111,6 +116,11 @@
 		2D42A315253DCB8200200C2C /* PeopleListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListInteractor.swift; sourceTree = "<group>"; };
 		2D42A325253DD39700200C2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainFlow.strings; sourceTree = "<group>"; };
 		2D42A329253DD39B00200C2C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainFlow.strings; sourceTree = "<group>"; };
+		2DBC497D2540388C008AA710 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		2DBC498325403989008AA710 /* MyChatsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListModels.swift; sourceTree = "<group>"; };
+		2DF6376E2540749A0031AFDA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2DF6377425407CA00031AFDA /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
+		2DF6377A25407D340031AFDA /* SelfConfigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfigureCell.swift; sourceTree = "<group>"; };
 		40E45C3B4BC7E72B6BB43AF0 /* Pods-SimpleMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMeet.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMeet/Pods-SimpleMeet.debug.xcconfig"; sourceTree = "<group>"; };
 		6006216424BDAC68005DBC90 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
 		6006216524BDAC68005DBC90 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
@@ -241,14 +251,50 @@
 		2D42A301253DCAE500200C2C /* MyChatsList */ = {
 			isa = PBXGroup;
 			children = (
+				2D8BEE932540370D00464174 /* MyChatsListView */,
 				2D42A302253DCB4B00200C2C /* MyChatsListPresenter.swift */,
 				2D42A303253DCB4B00200C2C /* MyChatsListRouter.swift */,
-				2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */,
 				2D42A305253DCB4B00200C2C /* MyChatsListProtocols.swift */,
 				2D42A306253DCB4B00200C2C /* MyChatsListAssembly.swift */,
 				2D42A307253DCB4B00200C2C /* MyChatsListInteractor.swift */,
+				2DBC498325403989008AA710 /* MyChatsListModels.swift */,
 			);
 			path = MyChatsList;
+			sourceTree = "<group>";
+		};
+		2D62E38925404030008C56E6 /* ActiveChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC497D2540388C008AA710 /* ActiveChatCell.swift */,
+			);
+			path = ActiveChatCell;
+			sourceTree = "<group>";
+		};
+		2D8BEE932540370D00464174 /* MyChatsListView */ = {
+			isa = PBXGroup;
+			children = (
+				2DBC497C2540385E008AA710 /* MyChatsListCells */,
+				2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */,
+			);
+			path = MyChatsListView;
+			sourceTree = "<group>";
+		};
+		2DBC497C2540385E008AA710 /* MyChatsListCells */ = {
+			isa = PBXGroup;
+			children = (
+				2DF6377A25407D340031AFDA /* SelfConfigureCell.swift */,
+				2DF6377325407C790031AFDA /* WaitingChatCell */,
+				2D62E38925404030008C56E6 /* ActiveChatCell */,
+			);
+			path = MyChatsListCells;
+			sourceTree = "<group>";
+		};
+		2DF6377325407C790031AFDA /* WaitingChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				2DF6377425407CA00031AFDA /* WaitingChatCell.swift */,
+			);
+			path = WaitingChatCell;
 			sourceTree = "<group>";
 		};
 		4FA2616E6690D2655CA31765 /* Pods */ = {
@@ -466,6 +512,7 @@
 				608A486D24ADEA980023E58A /* UIColor+Dark+Hex.swift */,
 				6037B0FA24C6C1A500F38F17 /* UIStackView+addArrSub.swift */,
 				6013050E24C6F183005841C2 /* UILabel+Gradient.swift */,
+				2DF6376E2540749A0031AFDA /* GradientView.swift */,
 			);
 			path = UIKitExtensions;
 			sourceTree = "<group>";
@@ -720,10 +767,12 @@
 				60A827C724C6078B00531E78 /* UIView + addSub.swift in Sources */,
 				608A487224ADEF470023E58A /* UIColor+Pallete.swift in Sources */,
 				6006216C24BDAC68005DBC90 /* AuthViewController.swift in Sources */,
+				2DF6376F2540749A0031AFDA /* GradientView.swift in Sources */,
 				6006216E24BDAC68005DBC90 /* AuthAssembly.swift in Sources */,
 				6006216F24BDAC68005DBC90 /* AuthInteractor.swift in Sources */,
 				6037B10524C6C74D00F38F17 /* SignUpViewController.swift in Sources */,
 				2D42A30D253DCB4B00200C2C /* MyChatsListInteractor.swift in Sources */,
+				2DBC497E2540388C008AA710 /* ActiveChatCell.swift in Sources */,
 				60BEC9CC24C973C3000C2B71 /* AddPhotoView.swift in Sources */,
 				2D42A31A253DCB8200200C2C /* PeopleListAssembly.swift in Sources */,
 				2D42A31B253DCB8200200C2C /* PeopleListInteractor.swift in Sources */,
@@ -741,6 +790,7 @@
 				6037B10324C6C74D00F38F17 /* SignUpPresenter.swift in Sources */,
 				6037B10724C6C74D00F38F17 /* SignUpAssembly.swift in Sources */,
 				2D42A318253DCB8200200C2C /* PeopleListViewController.swift in Sources */,
+				2DBC498425403989008AA710 /* MyChatsListModels.swift in Sources */,
 				6037B0FB24C6C1A500F38F17 /* UIStackView+addArrSub.swift in Sources */,
 				6006217824C5869B005DBC90 /* MaterialVerticalButton.swift in Sources */,
 				6037B11324C6CCE000F38F17 /* SignInProtocols.swift in Sources */,
@@ -766,6 +816,7 @@
 				6006218624C5E594005DBC90 /* UIFont+app.swift in Sources */,
 				2D42A30B253DCB4B00200C2C /* MyChatsListProtocols.swift in Sources */,
 				60A827CB24C6079400531E78 /* UIView+heights.swift in Sources */,
+				2DF6377B25407D340031AFDA /* SelfConfigureCell.swift in Sources */,
 				608A487324ADEF470023E58A /* UIImage+app.swift in Sources */,
 				6006216D24BDAC68005DBC90 /* AuthProtocols.swift in Sources */,
 				6037B10824C6C74D00F38F17 /* SignUpInteractor.swift in Sources */,
@@ -776,6 +827,7 @@
 				6006218424C5D27D005DBC90 /* MaterialLoadingIndicator.swift in Sources */,
 				60BEC9C424C96EB5000C2B71 /* ProfilePresenter.swift in Sources */,
 				2D42A2FB253DCA4200200C2C /* MainTabBarController.swift in Sources */,
+				2DF6377525407CA00031AFDA /* WaitingChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,7 +1024,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -992,7 +1044,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fedorinovdmitry.me.t.SimpleMeet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
