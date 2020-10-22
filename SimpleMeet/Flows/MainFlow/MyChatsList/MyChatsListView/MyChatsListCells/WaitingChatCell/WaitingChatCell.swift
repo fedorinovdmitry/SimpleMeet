@@ -43,8 +43,6 @@ class WaitingChatCell: UICollectionViewCell, SelfConfigureCell {
     
 }
 
-
-
 // MARK: - SwiftUI
 
 import SwiftUI

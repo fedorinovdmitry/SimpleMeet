@@ -23,6 +23,7 @@
 		2D42A324253DD39700200C2C /* MainFlow.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D42A326253DD39700200C2C /* MainFlow.strings */; };
 		2DBC497E2540388C008AA710 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC497D2540388C008AA710 /* ActiveChatCell.swift */; };
 		2DBC498425403989008AA710 /* MyChatsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBC498325403989008AA710 /* MyChatsListModels.swift */; };
+		2DD2398C2541BC7E00CC5769 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2398B2541BC7E00CC5769 /* SectionHeader.swift */; };
 		2DF6376F2540749A0031AFDA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6376E2540749A0031AFDA /* GradientView.swift */; };
 		2DF6377525407CA00031AFDA /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6377425407CA00031AFDA /* WaitingChatCell.swift */; };
 		2DF6377B25407D340031AFDA /* SelfConfigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6377A25407D340031AFDA /* SelfConfigureCell.swift */; };
@@ -118,6 +119,7 @@
 		2D42A329253DD39B00200C2C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainFlow.strings; sourceTree = "<group>"; };
 		2DBC497D2540388C008AA710 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		2DBC498325403989008AA710 /* MyChatsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatsListModels.swift; sourceTree = "<group>"; };
+		2DD2398B2541BC7E00CC5769 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		2DF6376E2540749A0031AFDA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2DF6377425407CA00031AFDA /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		2DF6377A25407D340031AFDA /* SelfConfigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfigureCell.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				2DBC497C2540385E008AA710 /* MyChatsListCells */,
 				2D42A304253DCB4B00200C2C /* MyChatsListViewController.swift */,
+				2DD2398B2541BC7E00CC5769 /* SectionHeader.swift */,
 			);
 			path = MyChatsListView;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				6006216B24BDAC68005DBC90 /* AuthRouter.swift in Sources */,
 				6006217A24C588E2005DBC90 /* MaterialDesignExtensions.swift in Sources */,
 				2D42A317253DCB8200200C2C /* PeopleListRouter.swift in Sources */,
+				2DD2398C2541BC7E00CC5769 /* SectionHeader.swift in Sources */,
 				6006218824C5EFDD005DBC90 /* LoginInAppViewsFactory.swift in Sources */,
 				60973F152509376F006FBE6F /* ProfileConstraints.swift in Sources */,
 				6037B11424C6CCE000F38F17 /* SignInAssembly.swift in Sources */,

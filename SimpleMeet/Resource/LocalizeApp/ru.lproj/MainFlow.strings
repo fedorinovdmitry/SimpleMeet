@@ -10,10 +10,7 @@
 
 "People" = "Знакомства";
 "Messenger" = "Сообщения";
-
-
-// MARK: Labels
-// MARK: Buttons
-// MARK: Images
+"Waiting chats" = "Ожидающие чаты";
+"Active chats" = "Активные чаты";
 
 

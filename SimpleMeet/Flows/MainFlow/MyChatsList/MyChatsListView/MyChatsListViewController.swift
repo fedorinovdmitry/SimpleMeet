@@ -25,6 +25,9 @@ final class MyChatsListViewController: UIViewController {
         MChat(userName: "Bob", userImage: "human2", lastMessage: "How are you?"),
         MChat(userName: "Misha", userImage: "human3", lastMessage: "How are you?"),
         MChat(userName: "Mila", userImage: "human4", lastMessage: "How are you?"),
+        MChat(userName: "fer", userImage: "4", lastMessage: "How are you?"),
+        MChat(userName: "fer", userImage: "4", lastMessage: "How are you?"),
+        MChat(userName: "fer", userImage: "4", lastMessage: "How are you?"),
         MChat(userName: "fer", userImage: "4", lastMessage: "How are you?")
     ]
     
@@ -32,6 +35,9 @@ final class MyChatsListViewController: UIViewController {
         MChat(userName: "Petr", userImage: "human5", lastMessage: "How are you?"),
         MChat(userName: "Kisa", userImage: "human6", lastMessage: "How are you?"),
         MChat(userName: "Loshk", userImage: "human7", lastMessage: "How are you?"),
+        MChat(userName: "Foniy", userImage: "human2", lastMessage: "How are you?"),
+        MChat(userName: "Foniy", userImage: "human2", lastMessage: "How are you?"),
+        MChat(userName: "Foniy", userImage: "human2", lastMessage: "How are you?"),
         MChat(userName: "Foniy", userImage: "human2", lastMessage: "How are you?")
     ]
     
@@ -45,6 +51,7 @@ final class MyChatsListViewController: UIViewController {
         configurator.configure(with: self)
         createAndSetupViews()
         presenter.configureView()
+        
         
     }
     
@@ -87,8 +94,14 @@ final class MyChatsListViewController: UIViewController {
         collectionView.backgroundColor = UIColor.Pallete.white
         
         view.addSubview(collectionView)
-        collectionView.register(WaitingChatCell.self, forCellWithReuseIdentifier: WaitingChatCell.reuseId)
-        collectionView.register(ActiveChatCell.self, forCellWithReuseIdentifier: ActiveChatCell.reuseId)
+        
+        collectionView.register(SectionHeader.self,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                                withReuseIdentifier: SectionHeader.reuseId)
+        collectionView.register(WaitingChatCell.self,
+                                forCellWithReuseIdentifier: WaitingChatCell.reuseId)
+        collectionView.register(ActiveChatCell.self,
+                                forCellWithReuseIdentifier: ActiveChatCell.reuseId)
         
         createDataSource()
         
@@ -97,6 +110,17 @@ final class MyChatsListViewController: UIViewController {
     private enum Section: Int, CaseIterable {
         case waitingChats
         case activeChats
+        
+        var headerDescription: String {
+            switch self {
+            case .waitingChats:
+                return "Waiting chats".localized(with: .mainFlow)
+            case .activeChats:
+                return "Active chats".localized(with: .mainFlow)
+            }
+        }
+            
+        
     }
     
     private func reloadData() {
@@ -167,6 +191,18 @@ extension MyChatsListViewController {
                 return self.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
             }
         })
+        
+        dataSource?.supplementaryViewProvider = {collectionView, kind, indexPath in
+            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                                      withReuseIdentifier: SectionHeader.reuseId,
+                                                                                      for: indexPath) as? SectionHeader
+            else { fatalError("Cannot create new section header")}
+            guard let section = Section(rawValue: indexPath.section)
+            else { fatalError("Unknown section kind")}
+            sectionHeader.configure(text: section.headerDescription)
+            
+            return sectionHeader
+        }
         reloadData()
     }
     
@@ -192,11 +228,18 @@ extension MyChatsListViewController {
                 return self.createActiveChats()
             }
         }
+        
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = UIDevice.giveSizeForCurrentDevice().height / 50 //расстояние между секциями
+        layout.configuration = config
+        
         return layout
     }
     
     private func createWaitingChats() -> NSCollectionLayoutSection {
-        let itemHeight = UIDevice.giveSizeForCurrentDevice().height / 10
+        let deviceHeight = UIDevice.giveSizeForCurrentDevice().height
+        let deviceWidth = UIDevice.giveSizeForCurrentDevice().width
+        let itemHeight = deviceHeight / 10
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                               heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -210,15 +253,19 @@ extension MyChatsListViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous
         section.interGroupSpacing = UIDevice.giveSizeForCurrentDevice().width / 25.8
-        section.contentInsets = NSDirectionalEdgeInsets.init(top: 16,
-                                                             leading: 20,
+        section.contentInsets = NSDirectionalEdgeInsets.init(top: deviceHeight/56,
+                                                             leading: deviceWidth/23,
                                                              bottom: 0,
-                                                             trailing: 20)
+                                                             trailing: deviceWidth/23)
+        section.boundarySupplementaryItems = [createSectionHeader()]
+        
         return section
     }
     
     private func createActiveChats() -> NSCollectionLayoutSection {
-        let itemHeight = UIDevice.giveSizeForCurrentDevice().height / 11
+        let deviceHeight = UIDevice.giveSizeForCurrentDevice().height
+        let deviceWidth = UIDevice.giveSizeForCurrentDevice().width
+        let itemHeight = deviceHeight / 11
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
                                               heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -232,11 +279,22 @@ extension MyChatsListViewController {
         
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = UIDevice.giveSizeForCurrentDevice().width / 50
-        section.contentInsets = NSDirectionalEdgeInsets.init(top: 16,
-                                                             leading: 20,
+        section.contentInsets = NSDirectionalEdgeInsets.init(top: deviceHeight/50 ,
+                                                             leading: deviceWidth/23,
                                                              bottom: 0,
-                                                             trailing: 20)
+                                                             trailing: deviceWidth/23)
+        section.boundarySupplementaryItems = [createSectionHeader()]
         return section
+    }
+    
+    private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
+        
+        let sectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                                       heightDimension: .estimated(1))
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionHeaderSize,
+                                                                        elementKind: UICollectionView.elementKindSectionHeader,
+                                                                        alignment: .top)
+        return sectionHeader
     }
     
 }

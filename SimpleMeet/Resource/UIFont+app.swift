@@ -22,6 +22,7 @@ extension UIFont {
         case avenir
         case avenirTitle
         case avenirWith(customSize: CGFloat)
+        case avenirBoldTitle
         case phosphateProInlineTitle
         case laoSangamMN
         case laoSangamMNmini
@@ -34,6 +35,8 @@ extension UIFont {
             font = UIFont.init(name: "Avenir", size: fontSize)
         case .avenirTitle:
             font = UIFont.init(name: "Avenir", size: fontSize+3)
+        case .avenirBoldTitle:
+            font = UIFont.init(name: "Avenir-Black", size: fontSize+3)
         case .avenirWith(let customSize):
             font = UIFont.init(name: "Avenir", size: customSize)
         case .phosphateProInlineTitle:

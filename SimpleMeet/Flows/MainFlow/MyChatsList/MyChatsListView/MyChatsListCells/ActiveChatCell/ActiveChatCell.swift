@@ -101,7 +101,7 @@ extension ActiveChatCell {
         //friendName constraints
         friendName.snp.makeConstraints { make in
             make.leading.equalTo(friendImageView.snp.trailing).offset(width/20)
-            make.centerY.equalToSuperview().offset(-(height/10))
+            make.centerY.equalToSuperview().offset(-(height/5.5))
             make.trailing.equalTo(gradientView.snp.leading).offset(-width/20)
         }
         
